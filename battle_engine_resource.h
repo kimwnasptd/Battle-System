@@ -3,6 +3,9 @@
 
 /* Battle setup structs */
 
+#define poke_size 0x64
+
+
 struct battle_config {
 	u8 type;
 	u8 purge_switch;
@@ -21,18 +24,35 @@ struct battle_config {
 };
 
 struct battler {
+	u16 species; // for my laziness 
+	u16 weight;
+	u8 level;
 	u8 types[3]; // 3 types, yay gen 6!
-	u8 ability[2];
+	u8 ability;
 	u16 item;
 	u16 moves_used[4];
 	u16 move_used_last;
+	u8 last_move_target;
+	u16 damage_taken;
+	u8 damage_taken_type;
+	u8 damaged_by_whom; // u8 damager ID
+	u16 damage_done; // turn basis
+	u16 queued_move;
+	u8 multi_hit; // how many hits so far
+	u8 stock_pile;
+	u8 pokemon_bank_id;
+	u8 turns_in_battle;
 	
+	
+	u8 metronome;
 	u8 toxic; // turns count
 	u8 leech_seed; //pokemon in which slot gets the HP
 	u8 disable; // turns remaining
 	u8 taunt; // turns remaining
 	u8 torment; // turns remaining
 	u8 encore; // turns remaining
+	u8 bide; // turns remaining
+	u8 mirrorcoat_counter; // activated. 1 = mirror, 2 = counter, 0 = inactive
 	
 	u8 furry_cutter; // times used
 	u8 rollout_iceball; // times used
@@ -40,14 +60,22 @@ struct battler {
 	u8 trap; // duration + dmg
 	u16 trap_dmg;
 	
-	u16 attack_multiplier : 2;
-	u16 defence_multiplier : 2;
-	u16 special_attack_multiplier : 2;
-	u16 special_defence_multiplier : 2;
-	u16 speed_multiplier : 2;
-	u16 evasion_multiplier : 2;
-	u16 accuracy_multiplier : 2;
-	u16 pokerus_maybe_someday : 2;
+	u32 attack_multiplier : 2;
+	u32 attack_divider : 2;
+	u32 defence_multiplier : 2;
+	u32 defence_divider : 2;
+	u32 special_attack_multiplier : 2;
+	u32 special_attack_divider : 2;
+	u32 special_defence_multiplier : 2;
+	u32 special_defence_divider : 2;
+	u32 speed_multiplier : 2;
+	u32 speed_divider : 2;
+	u32 evasion_multiplier : 2;
+	u32 evasion_divider : 2;
+	u32 accuracy_multiplier : 2;
+	u32 accuracy_divider : 2;
+	u32 crit_multiplier : 2;
+	u32 crit_divider : 2;
 	
 	// statuses and things the user can be under
 	u16 substitute : 1;
@@ -57,7 +85,7 @@ struct battler {
 	u16 dig : 1;
 	u16 dive : 1;
 	u16 fly : 1;
-	u16 phantom_force : 1;
+	u16 paddin_bit : 1;
 	u16 shadow_force : 1;
 	u16 sky_drop : 1;
 	u16 lock_on_mind_reader : 1;
@@ -65,26 +93,45 @@ struct battler {
 	u16 protect : 1;
 	u16 influation : 1;
 	u16 floored : 1; // gravity, magnet rise, ect.
-
+	u16 battle_side : 1; // 0 = player side, 1 = opponent side
+	
+	u16 minimize : 1;
+	u16 defense_curl : 1;
+	u16 confused : 1;
+	u16 odor_sleuth : 1;
+	u16 helping_hand : 1;
+	u16 charge : 1;
+	u16 turn_skip : 1;
+	u16 focus_punch : 1;
+	u16 outrage : 1;
+	u16 me_first : 1;
+	u16 attacked : 1;
+	u16 gender : 1;
+	u16 free_space : 5;
 };
 
 struct field_modifiers {
 	// holds layers count/activated count per side
 	u8 spikes[2];
 	u8 toxic_spikes[2];
-	u8 stealth_rocks[2];
+	u8 stealth_2,ks[2];
 	u8 sticky_web[2];
 	u8 fairy_lock[2];
 	u8 magnetic_flux;
+	u8 fainted[2]; // something fainted on side
 	
 	
 	// turns count or team-wide status inducers
 	u8 trick_room;
 	u8 ion_deluge;
-	u8 wide_gaurd[2];
+	u8 gaurd[4]; // [0] used player side, [1] type, ...
 	
 	// type and durations
 	u8 weather[2];
+	
+	// durations
+	u8 mud_sport;
+	u8 water_sport;
 	
 	/* 
 	these arrays are of style:
@@ -106,15 +153,44 @@ struct field_modifiers {
 	move[0] = 1 if pokemon at slot was choosen as target to recieve
 	move[1] = duration till attack	
 	*/
-	u8 future_sight[24];
-	u8 doomdesire[24];
+	u8 future_sight[12];
+	u8 doomdesire[12];
+	u8 echoed_voice[2]; // times used successively
+	u8 round[2]; // allies used round.
 };
 
 struct battle_field {
+	u8 battle_type;
 	u8 turn_counter;
 	struct field_modifiers modifiers;
-	struct battler battlers[12]; // potential for 12 on field at once
+	struct battler battlers[6]; // potential for 6 on field at once
+	struct pokemon *battle_data[6];
+	u8 ally[6] : 6;
+	u8 ally_padding : 2;
 };
 
+struct pokemon {
+	u32 PID;
+	u32 OTID;
+	u8 name[10];
+	u16 language;
+	u8 OT_name[7];
+	u8 markings;
+	u16 checksum;
+	u16 padding_maybe;
+	u8 data[48];
+	u32 ailment;
+	u8 level;
+	u8 pokerus;
+	u16 current_hp;
+	u16 total_hp;
+	u16 attack;
+	u16 defense;
+	u16 speed;
+	u16 sp_attack;
+	u16 sp_defense;
+};
+
+struct pokemon pokemon_bank[12];
 
 #endif /* BATTLE_LOCAL_RESOURCES */
