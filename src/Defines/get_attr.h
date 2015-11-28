@@ -3,14 +3,14 @@
 #include "types.h"
 
 
-#define PID 0
-#define TID 1
-#define NAME 2
-#define FONT_LANG 3
-#define SANITY 4
-#define OT_NAME 7
-#define MARKS 8
-#define CHECKSUM 9
+#define PID 0x0
+#define TID 0x1
+#define NAME 0x2
+#define FONT_LANG 0x3
+#define SANITY 0x4
+#define OT_NAME 0x7
+#define MARKS 0x8
+#define CHECKSUM 0x9
 #define SPECIES 0xB
 #define HELD_ITEM 0xC
 #define ATTACK_1 0xD
