@@ -1,0 +1,215 @@
+case PID:
+	arg = 0;
+	break;
+
+case TID:
+	arg = 1;
+	break;
+
+case NAME:
+	arg = 2;
+	break;
+
+case FONT_LANG:
+	arg = 3;
+	break;
+
+case SANITY:
+	arg = 4;
+	break;
+	
+case OT_NAME:
+	arg = 7;
+	break;
+
+case MARKS:
+	arg = 8;
+	break;
+
+case CHECKSUM:
+	arg = 9;
+	break;
+
+case SPECIES:
+	arg = 0xB;
+	break;
+
+case HELD_ITEM:
+	arg = 0xC;
+	break;
+
+case ATTACK_1:
+	arg = 0xD;
+	break;
+
+case ATTACK_2:
+	arg = 0xE;
+	break;
+
+case ATTACK_3:
+	arg = 0xF;
+	break;
+
+case ATTACK_4:
+	arg = 0x10;
+	break;
+
+case PP_1:
+	arg = 0x11;
+	break;
+
+case PP_2:
+	arg = 0x12;
+	break;
+
+case PP_3:
+	arg = 0x13;
+	break;
+
+case PP_4:
+	arg = 0x14;
+	break;
+
+case PP_BONUS:
+	arg = 0x15;
+	break;
+
+case COOLNESS:
+	arg = 0x16;
+	break;
+
+case BEAUTY:
+	arg = 0x17;
+	break;
+
+case CUTENESS:
+	arg = 0x18;
+	break;
+
+case EXP:
+	arg = 0x19;
+	break;
+
+case HP_EV:
+	arg = 0x1A;
+	break;
+
+case ATTACK_EV:
+	arg = 0x1B;
+	break;
+
+case DEFENCE_EV:
+	arg = 0x1C;
+	break;
+
+case SPEED_EV:
+	arg = 0x1D;
+	break;
+
+case SP_ATTACK_EV:
+	arg = 0x1E;
+	break;
+
+case SP_DEFENCE_EV:
+	arg = 0x1F;
+	break;
+
+case HAPPINESS:
+	arg = 0x20;
+	break;
+
+case SMARTNESS:
+	arg = 0x21;
+	break;
+
+case POKERUS:
+	arg = 0x22;
+	break;
+
+case CATCH_LOCATION:
+	arg = 0x23;
+	break;
+
+case CATCH_LVL:
+	arg = 0x24;
+	break;
+
+case HP_IV:
+	arg = 0x27;
+	break;
+
+case ATTACK_IV:
+	arg = 0x28;
+	break;
+
+case DEFENCE_IV:
+	arg = 0x29;
+	break;
+
+case SPEED_IV:
+	arg = 0x2A;
+	break;
+
+case SPECIAL_ATTACK_IV:
+	arg = 0x2B;
+	break;
+
+case SPECIAL_DEFENCE_IV:
+	arg = 0x2C;
+	break;
+
+case IS_EGG:
+	arg = 0x2D;
+	break;
+
+case ABILITY_BIT:
+	arg = 0x2E;
+	break;
+
+case TOUGHNESS:
+	arg = 0x2F;
+	break;
+
+case SHEEN:
+	arg = 0x30;
+	break;
+
+case STATUS_AILMENT:
+	arg = 0x37;
+	break;
+
+case LEVEL:
+	arg = 0x38;
+	break;
+
+case CURRENT_HP:
+	arg = 0x39;
+	break;
+
+case TOTAL_HP:
+	arg = 0x3A;
+	break;
+
+case ATTACK:
+	arg = 0x3B;
+	break;
+
+case DEFENCE:
+	arg = 0x3C;
+	break;
+
+case SPEED:
+	arg = 0x3D;
+	break;
+
+case SPECIAL_ATTACK:
+	arg = 0x3E;
+	break;
+
+case SPECIAL_DEFENCE:
+	arg = 0x3F;
+	break;
+
+case SPECIES:
+	arg = 0x41;
+	break;
