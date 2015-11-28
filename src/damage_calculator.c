@@ -9,7 +9,7 @@
 
 u8 is_type(struct battler *attacker, u8 type) {
 	int i;
-	for (i=0; i < 3; i++) {
+	for (i = 0; i < 3; i++) {
 		if (type == attacker->types[i]){
 			return true; // is type
 		}
@@ -31,7 +31,7 @@ u16 get_item(struct battler *attacker) {
 	if (!ability_present(UNNERVE)) {
 		// can't use berry
 		int i;
-		for (i=0, i < sizeof(berries_t); i++) {
+		for (i = 0, i < sizeof(berries_t); i++) {
 			if (attacker->item == berries_t[i].item_id) {
 				return false;
 			}
