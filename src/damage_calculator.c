@@ -1,5 +1,5 @@
 #include "battle_engine_resource.h"
-#include "damage_calculator.h:
+#include "damage_calculator.h"
 #include "multipurpose_resources.c"
 #include "abilities.h"
 #include "moves.h"
