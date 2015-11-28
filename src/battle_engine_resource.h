@@ -3,7 +3,9 @@
 
 /* Battle setup structs */
 
-#define poke_size 0x64
+#include "types.h"
+
+#define species_count 800
 
 
 struct battle_config {
@@ -23,13 +25,29 @@ struct battle_config {
 	u8 ally_backsprites[3];
 };
 
+struct battle_flags {
+	u8 effectiveness; // 1 Not effective, 2 super, 0 normal
+	u8 crit_flag : 1;
+	u8 health_was_full : 1;
+	u8 abilities_disabled : 1;
+	u8 items_disabled : 1;
+	u8 pursuit_flag : 1;
+};
+
 struct battler {
-	u16 species; // for my laziness 
+	u16 species; // for my laziness
+	u8 ability;
 	u16 weight;
 	u8 level;
 	u8 types[3]; // 3 types, yay gen 6!
-	u8 ability;
 	u16 item;
+	u16 current_hp;
+	u16 total_hp;
+	u16 attack;
+	u16 defense;
+	u16 speed;
+	u16 sp_attack;
+	u16 sp_defense;
 	u16 moves_used[4];
 	u16 move_used_last;
 	u8 last_move_target;
@@ -62,12 +80,12 @@ struct battler {
 	
 	u32 attack_multiplier : 2;
 	u32 attack_divider : 2;
-	u32 defence_multiplier : 2;
-	u32 defence_divider : 2;
+	u32 defense_multiplier : 2;
+	u32 defense_divider : 2;
 	u32 special_attack_multiplier : 2;
 	u32 special_attack_divider : 2;
-	u32 special_defence_multiplier : 2;
-	u32 special_defence_divider : 2;
+	u32 special_defense_multiplier : 2;
+	u32 special_defense_divider : 2;
 	u32 speed_multiplier : 2;
 	u32 speed_divider : 2;
 	u32 evasion_multiplier : 2;
@@ -107,14 +125,17 @@ struct battler {
 	u16 me_first : 1;
 	u16 attacked : 1;
 	u16 gender : 1;
-	u16 free_space : 5;
+	u16 transformed : 1;
+	u16 gastro_acid : 1;
+	u16 embargo : 1;
+	u16 free_space : 2;
 };
 
 struct field_modifiers {
 	// holds layers count/activated count per side
 	u8 spikes[2];
 	u8 toxic_spikes[2];
-	u8 stealth_2,ks[2];
+	u8 stealth_rocks[2];
 	u8 sticky_web[2];
 	u8 fairy_lock[2];
 	u8 magnetic_flux;
@@ -122,7 +143,7 @@ struct field_modifiers {
 	
 	
 	// turns count or team-wide status inducers
-	u8 trick_room;
+	u8 trick_room[2]; // first byte is type of room, wonder magic or trick
 	u8 ion_deluge;
 	u8 gaurd[4]; // [0] used player side, [1] type, ...
 	
@@ -165,6 +186,7 @@ struct battle_field {
 	struct field_modifiers modifiers;
 	struct battler battlers[6]; // potential for 6 on field at once
 	struct pokemon *battle_data[6];
+	struct battle_flags b_flags;
 	u8 ally[6] : 6;
 	u8 ally_padding : 2;
 };
@@ -191,6 +213,14 @@ struct pokemon {
 	u16 sp_defense;
 };
 
-struct pokemon pokemon_bank[12];
+struct evolution_entry {
+	u8 method;
+	u16 condition;
+	u16 species;
+	u8 padding[3];
+};
+
+extern struct evolution_entry evolution_table[species_count];
+extern struct pokemon pokemon_bank[12];
 
 #endif /* BATTLE_LOCAL_RESOURCES */
