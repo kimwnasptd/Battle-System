@@ -32,7 +32,7 @@ struct move_table {
 	u8 kings_2,k : 1;
 	u8 crit_chance : 1;
 	u8 padding_field : 1;
-	u8 is_physical;
+	u8 is_special;
 	u16 move_id;
 };
 
