@@ -2,626 +2,626 @@
 #define MOVE_IDS
 
 
-#define Absorb 0x47
-#define Acid 0x33
-#define Acid Armor 0x97
-#define Acid Spray 0x1EB
-#define Acrobatics 0x200
-#define Acupressure 0x16F
-#define Aerial Ace 0x14C
-#define Aeroblast 0xB1
-#define After You 0x1EF
-#define Agility 0x61
-#define Air Cutter 0x13A
-#define Air Slash 0x193
-#define Ally Switch 0x1F6
-#define Amnesia 0x85
-#define Ancient Power 0xF6
-#define Aqua Jet 0x1C5
-#define Aqua Ring 0x188
-#define Aqua Tail 0x191
-#define Arm Thrust 0x124
-#define Aromatherapy 0x138
-#define Aromatic Mist 0x255
-#define Assist 0x112
-#define Assurance 0x174
-#define Astonish 0x136
-#define Attack Order 0x1C6
-#define Attract 0xD5
-#define Aura Sphere 0x18C
-#define Aurora Beam 0x3E
-#define Autotomize 0x1DB
-#define Avalanche 0x1A3
-#define Baby-Doll Eyes 0x260
-#define Barrage 0x8C
-#define Barrier 0x70
-#define Baton Pass 0xE2
-#define Beat Up 0xFB
-#define Belch 0x232
-#define Belly Drum 0xBB
-#define Bestow 0x204
-#define Bide 0x75
-#define Bind 0x14
-#define Bite 0x2C
-#define Blast Burn 0x133
-#define Blaze Kick 0x12B
-#define Blizzard 0x3B
-#define Block 0x14F
-#define Blue Flare 0x227
-#define Body Slam 0x22
-#define Bolt Strike 0x226
-#define Bone Club 0x7D
-#define Bone Rush 0xC6
-#define Bonemerang 0x9B
-#define Boomburst 0x24A
-#define Bounce 0x154
-#define Brave Bird 0x19D
-#define Brick Break 0x118
-#define Brine 0x16A
-#define Bubble 0x91
-#define Bubble Beam 0x3D
-#define Bug Bite 0x1C2
-#define Bug Buzz 0x195
-#define Bulk Up 0x153
-#define Bulldoze 0x20B
-#define Bullet Punch 0x1A2
-#define Bullet Seed 0x14B
-#define Calm Mind 0x15B
-#define Camouflage 0x125
-#define Captivate 0x1BD
-#define Celebrate 0x25E
-#define Charge 0x10C
-#define Charge Beam 0x1C3
-#define Charm 0xCC
-#define Chatter 0x1C0
-#define Chip Away 0x1F2
-#define Circle Throw 0x1FD
-#define Clamp 0x80
-#define Clear Smog 0x1F3
-#define Close Combat 0x172
-#define Coil 0x1E9
-#define Comet Punch 0x4
-#define Confide 0x24E
-#define Confuse Ray 0x6D
-#define Confusion 0x5D
-#define Constrict 0x84
-#define Conversion 0xA0
-#define Conversion 2 0xB0
-#define Copycat 0x17F
-#define Cosmic Power 0x142
-#define Cotton Guard 0x21A
-#define Cotton Spore 0xB2
-#define Counter 0x44
-#define Covet 0x157
-#define Crabhammer 0x98
-#define Crafty Shield 0x242
-#define Cross Chop 0xEE
-#define Cross Poison 0x1B8
-#define Crunch 0xF2
-#define Crush Claw 0x132
-#define Crush Grip 0x1CE
-#define Curse 0xAE
-#define Cut 0xF
-#define Dark Pulse 0x18F
-#define Dark Void 0x1D0
-#define Dazzling Gleam 0x25D
-#define Defend Order 0x1C7
-#define Defense Curl 0x6F
-#define Defog 0x1B0
-#define Destiny Bond 0xC2
-#define Detect 0xC5
-#define Diamond Storm 0x24F
-#define Dig 0x5B
-#define Disable 0x32
-#define Disarming Voice 0x23E
-#define Discharge 0x1B3
-#define Dive 0x123
-#define Dizzy Punch 0x92
-#define Doom Desire 0x161
-#define Double-Edge 0x26
-#define Double Hit 0x1CA
-#define Double Kick 0x18
-#define Double Slap 0x3
-#define Double Team 0x68
-#define Draco Meteor 0x1B2
-#define Dragon Ascent 0x26C
-#define Dragon Breath 0xE1
-#define Dragon Claw 0x151
-#define Dragon Dance 0x15D
-#define Dragon Pulse 0x196
-#define Dragon Rage 0x52
-#define Dragon Rush 0x197
-#define Dragon Tail 0x20D
-#define Draining Kiss 0x241
-#define Drain Punch 0x199
-#define Dream Eater 0x8A
-#define Drill Peck 0x41
-#define Drill Run 0x211
-#define Dual Chop 0x212
-#define Dynamic Punch 0xDF
-#define Earth Power 0x19E
-#define Earthquake 0x59
-#define Echoed Voice 0x1F1
-#define Eerie Impulse 0x256
-#define Egg Bomb 0x79
-#define Electric Terrain 0x25C
-#define Electrify 0x246
-#define Electro Ball 0x1E6
-#define Electroweb 0x20F
-#define Embargo 0x175
-#define Ember 0x34
-#define Encore 0xE3
-#define Endeavor 0x11B
-#define Endure 0xCB
-#define Energy Ball 0x19C
-#define Entrainment 0x1EE
-#define Eruption 0x11C
-#define Explosion 0x99
-#define Extrasensory 0x146
-#define Extreme Speed 0xF5
-#define Facade 0x107
-#define Feint Attack 0xB9
-#define Fairy Lock 0x24B
-#define Fairy Wind 0x248
-#define Fake Out 0xFC
-#define Fake Tears 0x139
-#define False Swipe 0xCE
-#define Feather Dance 0x129
-#define Feint 0x16C
-#define Fell Stinger 0x235
-#define Fiery Dance 0x228
-#define Final Gambit 0x203
-#define Fire Blast 0x7E
-#define Fire Fang 0x1A8
-#define Fire Pledge 0x207
-#define Fire Punch 0x7
-#define Fire Spin 0x53
-#define Fissure 0x5A
-#define Flail 0xAF
-#define Flame Burst 0x1E1
-#define Flame Charge 0x1E8
-#define Flame Wheel 0xAC
-#define Flamethrower 0x35
-#define Flare Blitz 0x18A
-#define Flash 0x94
-#define Flash Cannon 0x1AE
-#define Flatter 0x104
-#define Fling 0x176
-#define Flower Shield 0x243
-#define Fly 0x13
-#define Flying Press 0x230
-#define Focus Blast 0x19B
-#define Focus Energy 0x74
-#define Focus Punch 0x108
-#define Follow Me 0x10A
-#define Force Palm 0x18B
-#define Foresight 0xC1
-#define Forest's Curse 0x23B
-#define Foul Play 0x1EC
-#define Freeze-Dry 0x23D
-#define Freeze Shock 0x229
-#define Frenzy Plant 0x152
-#define Frost Breath 0x20C
-#define Frustration 0xDA
-#define Fury Attack 0x1F
-#define Fury Cutter 0xD2
-#define Fury Swipes 0x9A
-#define Fusion Bolt 0x22F
-#define Fusion Flare 0x22E
-#define Future Sight 0xF8
-#define Gastro Acid 0x17C
-#define Gear Grind 0x220
-#define Geomancy 0x259
-#define Giga Drain 0xCA
-#define Giga Impact 0x1A0
-#define Glaciate 0x225
-#define Glare 0x89
-#define Grass Knot 0x1BF
-#define Grass Pledge 0x208
-#define Grass Whistle 0x140
-#define Grassy Terrain 0x244
-#define Gravity 0x164
-#define Growl 0x2D
-#define Growth 0x4A
-#define Grudge 0x120
-#define Guard Split 0x1D6
-#define Guard Swap 0x181
-#define Guillotine 0xC
-#define Gunk Shot 0x1B9
-#define Gust 0x10
-#define Gyro Ball 0x168
-#define Hail 0x102
-#define Hammer Arm 0x167
-#define Happy Hour 0x25B
-#define Harden 0x6A
-#define Haze 0x72
-#define Head Charge 0x21F
-#define Head Smash 0x1C9
-#define Headbutt 0x1D
-#define Heal Bell 0xD7
-#define Heal Block 0x179
-#define Heal Order 0x1C8
-#define Heal Pulse 0x1F9
-#define Healing Wish 0x169
-#define Heart Stamp 0x213
-#define Heart Swap 0x187
-#define Heat Crash 0x217
-#define Heat Wave 0x101
-#define Heavy Slam 0x1E4
-#define Helping Hand 0x10E
-#define Hex 0x1FA
-#define Hidden Power 0xED
-#define High Jump Kick 0x88
-#define Hold Back 0x262
-#define Hold Hands 0x267
-#define Hone Claws 0x1D4
-#define Horn Attack 0x1E
-#define Horn Drill 0x20
-#define Horn Leech 0x214
-#define Howl 0x150
-#define Hurricane 0x21E
-#define Hydro Cannon 0x134
-#define Hydro Pump 0x38
-#define Hyper Beam 0x3F
-#define Hyper Fang 0x9E
-#define Hyperspace Fury 0x26D
-#define Hyperspace Hole 0x251
-#define Hyper Voice 0x130
-#define Hypnosis 0x5F
-#define Ice Ball 0x12D
-#define Ice Beam 0x3A
-#define Ice Burn 0x22A
-#define Ice Fang 0x1A7
-#define Ice Punch 0x8
-#define Ice Shard 0x1A4
-#define Icicle Crash 0x22C
-#define Icicle Spear 0x14D
-#define Icy Wind 0xC4
-#define Imprison 0x11E
-#define Incinerate 0x1FE
-#define Inferno 0x205
-#define Infestation 0x263
-#define Ingrain 0x113
-#define Ion Deluge 0x239
-#define Iron Defense 0x14E
-#define Iron Head 0x1BA
-#define Iron Tail 0xE7
-#define Judgment 0x1C1
-#define Jump Kick 0x1A
-#define Karate Chop 0x2
-#define Kinesis 0x86
-#define King's Shield 0x24C
-#define Knock Off 0x11A
-#define Land's Wrath 0x268
-#define Last Resort 0x183
-#define Lava Plume 0x1B4
-#define Leaf Blade 0x15C
-#define Leaf Storm 0x1B5
-#define Leaf Tornado 0x218
-#define Leech Life 0x8D
-#define Leech Seed 0x49
-#define Leer 0x2B
-#define Lick 0x7A
-#define Light of Ruin 0x269
-#define Light Screen 0x71
-#define Lock-On 0xC7
-#define Lovely Kiss 0x8E
-#define Low Kick 0x43
-#define Low Sweep 0x1EA
-#define Lucky Chant 0x17D
-#define Lunar Dance 0x1CD
-#define Luster Purge 0x127
-#define Mach Punch 0xB7
-#define Magic Coat 0x115
-#define Magic Room 0x1DE
-#define Magical Leaf 0x159
-#define Magma Storm 0x1CF
-#define Magnet Bomb 0x1BB
-#define Magnetic Flux 0x25A
-#define Magnet Rise 0x189
-#define Magnitude 0xDE
-#define Mat Block 0x231
-#define Me First 0x17E
-#define Mean Look 0xD4
-#define Meditate 0x60
-#define Mega Drain 0x48
-#define Mega Kick 0x19
-#define Mega Punch 0x5
-#define Megahorn 0xE0
-#define Memento 0x106
-#define Metal Burst 0x170
-#define Metal Claw 0xE8
-#define Metal Sound 0x13F
-#define Meteor Mash 0x135
-#define Metronome 0x76
-#define Milk Drink 0xD0
-#define Mimic 0x66
-#define Mind Reader 0xAA
-#define Minimize 0x6B
-#define Miracle Eye 0x165
-#define Mirror Coat 0xF3
-#define Mirror Move 0x77
-#define Mirror Shot 0x1AD
-#define Mist 0x36
-#define Mist Ball 0x128
-#define Misty Terrain 0x245
-#define Moonblast 0x249
-#define Moonlight 0xEC
-#define Morning Sun 0xEA
-#define Mud-Slap 0xBD
-#define Mud Bomb 0x1AA
-#define Mud Shot 0x155
-#define Mud Sport 0x12C
-#define Muddy Water 0x14A
-#define Mystical Fire 0x253
-#define Nasty Plot 0x1A1
-#define Natural Gift 0x16B
-#define Nature Power 0x10B
-#define Needle Arm 0x12E
-#define Night Daze 0x21B
-#define Night Shade 0x65
-#define Night Slash 0x190
-#define Nightmare 0xAB
-#define Noble Roar 0x238
-#define Nuzzle 0x261
-#define Oblivion Wing 0x265
-#define Octazooka 0xBE
-#define Odor Sleuth 0x13C
-#define Ominous Wind 0x1D2
-#define Origin Pulse 0x26A
-#define Outrage 0xC8
-#define Overheat 0x13B
-#define Pain Split 0xDC
-#define Parabolic Charge 0x23A
-#define Parting Shot 0x23F
-#define Pay Day 0x6
-#define Payback 0x173
-#define Peck 0x40
-#define Perish Song 0xC3
-#define Petal Blizzard 0x23C
-#define Petal Dance 0x50
-#define Phantom Force 0x236
-#define Pin Missile 0x2A
-#define Play Nice 0x24D
-#define Play Rough 0x247
-#define Pluck 0x16D
-#define Poison Fang 0x131
-#define Poison Gas 0x8B
-#define Poison Jab 0x18E
-#define Poison Powder 0x4D
-#define Poison Sting 0x28
-#define Poison Tail 0x156
-#define Pound 0x1
-#define Powder 0x258
-#define Powder Snow 0xB5
-#define Power Gem 0x198
-#define Power Split 0x1D7
-#define Power Swap 0x180
-#define Power Trick 0x17B
-#define Power-Up Punch 0x264
-#define Power Whip 0x1B6
-#define Precipice Blades 0x26B
-#define Present 0xD9
-#define Protect 0xB6
-#define Psybeam 0x3C
-#define Psych Up 0xF4
-#define Psychic 0x5E
-#define Psycho Boost 0x162
-#define Psycho Cut 0x1AB
-#define Psycho Shift 0x177
-#define Psyshock 0x1D9
-#define Psystrike 0x21C
-#define Psywave 0x95
-#define Punishment 0x182
-#define Pursuit 0xE4
-#define Quash 0x1FF
-#define Quick Attack 0x62
-#define Quick Guard 0x1F5
-#define Quiver Dance 0x1E3
-#define Rage 0x63
-#define Rage Powder 0x1DC
-#define Rain Dance 0xF0
-#define Rapid Spin 0xE5
-#define Razor Leaf 0x4B
-#define Razor Shell 0x216
-#define Razor Wind 0xD
-#define Recover 0x69
-#define Recycle 0x116
-#define Reflect 0x73
-#define Reflect Type 0x201
-#define Refresh 0x11F
-#define Relic Song 0x223
-#define Rest 0x9C
-#define Retaliate 0x202
-#define Return 0xD8
-#define Revenge 0x117
-#define Reversal 0xB3
-#define Roar 0x2E
-#define Roar of Time 0x1CB
-#define Rock Blast 0x15E
-#define Rock Climb 0x1AF
-#define Rock Polish 0x18D
-#define Rock Slide 0x9D
-#define Rock Smash 0xF9
-#define Rock Throw 0x58
-#define Rock Tomb 0x13D
-#define Rock Wrecker 0x1B7
-#define Role Play 0x110
-#define Rolling Kick 0x1B
-#define Rollout 0xCD
-#define Roost 0x163
-#define Rototiller 0x233
-#define Round 0x1F0
-#define Sacred Fire 0xDD
-#define Sacred Sword 0x215
-#define Safeguard 0xDB
-#define Sand Attack 0x1C
-#define Sand Tomb 0x148
-#define Sandstorm 0xC9
-#define Scald 0x1F7
-#define Scary Face 0xB8
-#define Scratch 0xA
-#define Screech 0x67
-#define Searing Shot 0x221
-#define Secret Power 0x122
-#define Secret Sword 0x224
-#define Seed Bomb 0x192
-#define Seed Flare 0x1D1
-#define Seismic Toss 0x45
-#define Self-Destruct 0x78
-#define Shadow Ball 0xF7
-#define Shadow Claw 0x1A5
-#define Shadow Force 0x1D3
-#define Shadow Punch 0x145
-#define Shadow Sneak 0x1A9
-#define Sharpen 0x9F
-#define Sheer Cold 0x149
-#define Shell Smash 0x1F8
-#define Shift Gear 0x1FC
-#define Shock Wave 0x15F
-#define Signal Beam 0x144
-#define Silver Wind 0x13E
-#define Simple Beam 0x1ED
-#define Sing 0x2F
-#define Sketch 0xA6
-#define Skill Swap 0x11D
-#define Skull Bash 0x82
-#define Sky Attack 0x8F
-#define Sky Drop 0x1FB
-#define Sky Uppercut 0x147
-#define Slack Off 0x12F
-#define Slam 0x15
-#define Slash 0xA3
-#define Sleep Powder 0x4F
-#define Sleep Talk 0xD6
-#define Sludge 0x7C
-#define Sludge Bomb 0xBC
-#define Sludge Wave 0x1E2
-#define Smack Down 0x1DF
-#define Smelling Salts 0x109
-#define Smog 0x7B
-#define Smokescreen 0x6C
-#define Snarl 0x22B
-#define Snatch 0x121
-#define Snore 0xAD
-#define Spiky Shield 0x254
-#define Soak 0x1E7
-#define Soft-Boiled 0x87
-#define Solar Beam 0x4C
-#define Sonic Boom 0x31
-#define Spacial Rend 0x1CC
-#define Spark 0xD1
-#define Spider Web 0xA9
-#define Spike Cannon 0x83
-#define Spikes 0xBF
-#define Spit Up 0xFF
-#define Spite 0xB4
-#define Splash 0x96
-#define Spore 0x93
-#define Stealth Rock 0x1BE
-#define Steam Eruption 0x250
-#define Steel Wing 0xD3
-#define Sticky Web 0x234
-#define Stockpile 0xFE
-#define Stomp 0x17
-#define Stone Edge 0x1BC
-#define Stored Power 0x1F4
-#define Storm Throw 0x1E0
-#define Steamroller 0x219
-#define Strength 0x46
-#define String Shot 0x51
-#define Struggle 0xA5
-#define Struggle Bug 0x20A
-#define Stun Spore 0x4E
-#define Submission 0x42
-#define Substitute 0xA4
-#define Sucker Punch 0x185
-#define Sunny Day 0xF1
-#define Super Fang 0xA2
-#define Superpower 0x114
-#define Supersonic 0x30
-#define Surf 0x39
-#define Swagger 0xCF
-#define Swallow 0x100
-#define Sweet Kiss 0xBA
-#define Sweet Scent 0xE6
-#define Swift 0x81
-#define Switcheroo 0x19F
-#define Swords Dance 0xE
-#define Synchronoise 0x1E5
-#define Synthesis 0xEB
-#define Tackle 0x21
-#define Tail Glow 0x126
-#define Tail Slap 0x21D
-#define Tail Whip 0x27
-#define Tailwind 0x16E
-#define Take Down 0x24
-#define Taunt 0x10D
-#define Techno Blast 0x222
-#define Teeter Dance 0x12A
-#define Telekinesis 0x1DD
-#define Teleport 0x64
-#define Thief 0xA8
-#define Thousand Arrows 0x266
-#define Thousand Waves 0x267
-#define Thrash 0x25
-#define Thunder 0x57
-#define Thunder Fang 0x1A6
-#define Thunder Punch 0x9
-#define Thunder Shock 0x54
-#define Thunder Wave 0x56
-#define Thunderbolt 0x55
-#define Tickle 0x141
-#define Topsy-Turvy 0x240
-#define Torment 0x103
-#define Toxic 0x5C
-#define Toxic Spikes 0x186
-#define Transform 0x90
-#define Tri Attack 0xA1
-#define Trick 0x10F
-#define Trick-or-Treat 0x237
-#define Trick Room 0x1B1
-#define Triple Kick 0xA7
-#define Trump Card 0x178
-#define Twineedle 0x29
-#define Twister 0xEF
-#define U-turn 0x171
-#define Uproar 0xFD
-#define V-create 0x22D
-#define Vacuum Wave 0x19A
-#define Venom Drench 0x257
-#define Venoshock 0x1DA
-#define Vice Grip 0xB
-#define Vine Whip 0x16
-#define Vital Throw 0xE9
-#define Volt Switch 0x209
-#define Volt Tackle 0x158
-#define Wake-Up Slap 0x166
-#define Water Gun 0x37
-#define Water Pledge 0x206
-#define Water Pulse 0x160
-#define Water Sport 0x15A
-#define Water Spout 0x143
-#define Waterfall 0x7F
-#define Water Shuriken 0x252
-#define Weather Ball 0x137
-#define Whirlpool 0xFA
-#define Whirlwind 0x12
-#define Wide Guard 0x1D5
-#define Wild Charge 0x210
-#define Will-O-Wisp 0x105
-#define Wing Attack 0x11
-#define Wish 0x111
-#define Withdraw 0x6E
-#define Wonder Room 0x1D8
-#define Wood Hammer 0x1C4
-#define Work Up 0x20E
-#define Worry Seed 0x184
-#define Wrap 0x23
-#define Wring Out 0x17A
-#define X-Scissor 0x194
-#define Yawn 0x119
-#define Zap Cannon 0xC0
-#define Zen Headbutt 0x1AC
+#define ABSORB 0x47
+#define ACID 0x33
+#define ACID_ARMOR 0x97
+#define ACID_SPRAY 0x1EB
+#define ACROBATICS 0x200
+#define ACUPRESSURE 0x16F
+#define AERIAL_ACE 0x14C
+#define AEROBLAST 0xB1
+#define AFTER_YOU 0x1EF
+#define AGILITY 0x61
+#define AIR_CUTTER 0x13A
+#define AIR_SLASH 0x193
+#define ALLY_SWITCH 0x1F6
+#define AMNESIA 0x85
+#define ANCIENT_POWER 0xF6
+#define AQUA_JET 0x1C5
+#define AQUA_RING 0x188
+#define AQUA_TAIL 0x191
+#define ARM_THRUST 0x124
+#define AROMATHERAPY 0x138
+#define AROMATIC_MIST 0x255
+#define ASSIST 0x112
+#define ASSURANCE 0x174
+#define ASTONISH 0x136
+#define ATTACK_ORDER 0x1C6
+#define ATTRACT 0xD5
+#define AURA_SPHERE 0x18C
+#define AURORA_BEAM 0x3E
+#define AUTOTOMIZE 0x1DB
+#define AVALANCHE 0x1A3
+#define BABY-DOLL_EYES 0x260
+#define BARRAGE 0x8C
+#define BARRIER 0x70
+#define BATON_PASS 0xE2
+#define BEAT_UP 0xFB
+#define BELCH 0x232
+#define BELLY_DRUM 0xBB
+#define BESTOW 0x204
+#define BIDE 0x75
+#define BIND 0x14
+#define BITE 0x2C
+#define BLAST_BURN 0x133
+#define BLAZE_KICK 0x12B
+#define BLIZZARD 0x3B
+#define BLOCK 0x14F
+#define BLUE_FLARE 0x227
+#define BODY_SLAM 0x22
+#define BOLT_STRIKE 0x226
+#define BONE_CLUB 0x7D
+#define BONE_RUSH 0xC6
+#define BONEMERANG 0x9B
+#define BOOMBURST 0x24A
+#define BOUNCE 0x154
+#define BRAVE_BIRD 0x19D
+#define BRICK_BREAK 0x118
+#define BRINE 0x16A
+#define BUBBLE 0x91
+#define BUBBLE_BEAM 0x3D
+#define BUG_BITE 0x1C2
+#define BUG_BUZZ 0x195
+#define BULK_UP 0x153
+#define BULLDOZE 0x20B
+#define BULLET_PUNCH 0x1A2
+#define BULLET_SEED 0x14B
+#define CALM_MIND 0x15B
+#define CAMOUFLAGE 0x125
+#define CAPTIVATE 0x1BD
+#define CELEBRATE 0x25E
+#define CHARGE 0x10C
+#define CHARGE_BEAM 0x1C3
+#define CHARM 0xCC
+#define CHATTER 0x1C0
+#define CHIP_AWAY 0x1F2
+#define CIRCLE_THROW 0x1FD
+#define CLAMP 0x80
+#define CLEAR_SMOG 0x1F3
+#define CLOSE_COMBAT 0x172
+#define COIL 0x1E9
+#define COMET_PUNCH 0x4
+#define CONFIDE 0x24E
+#define CONFUSE_RAY 0x6D
+#define CONFUSION 0x5D
+#define CONSTRICT 0x84
+#define CONVERSION 0xA0
+#define CONVERSION_2 0xB0
+#define COPYCAT 0x17F
+#define COSMIC_POWER 0x142
+#define COTTON_GUARD 0x21A
+#define COTTON_SPORE 0xB2
+#define COUNTER 0x44
+#define COVET 0x157
+#define CRABHAMMER 0x98
+#define CRAFTY_SHIELD 0x242
+#define CROSS_CHOP 0xEE
+#define CROSS_POISON 0x1B8
+#define CRUNCH 0xF2
+#define CRUSH_CLAW 0x132
+#define CRUSH_GRIP 0x1CE
+#define CURSE 0xAE
+#define CUT 0xF
+#define DARK_PULSE 0x18F
+#define DARK_VOID 0x1D0
+#define DAZZLING_GLEAM 0x25D
+#define DEFEND_ORDER 0x1C7
+#define DEFENSE_CURL 0x6F
+#define DEFOG 0x1B0
+#define DESTINY_BOND 0xC2
+#define DETECT 0xC5
+#define DIAMOND_STORM 0x24F
+#define DIG 0x5B
+#define DISABLE 0x32
+#define DISARMING_VOICE 0x23E
+#define DISCHARGE 0x1B3
+#define DIVE 0x123
+#define DIZZY_PUNCH 0x92
+#define DOOM_DESIRE 0x161
+#define DOUBLE-EDGE 0x26
+#define DOUBLE_HIT 0x1CA
+#define DOUBLE_KICK 0x18
+#define DOUBLE_SLAP 0x3
+#define DOUBLE_TEAM 0x68
+#define DRACO_METEOR 0x1B2
+#define DRAGON_ASCENT 0x26C
+#define DRAGON_BREATH 0xE1
+#define DRAGON_CLAW 0x151
+#define DRAGON_DANCE 0x15D
+#define DRAGON_PULSE 0x196
+#define DRAGON_RAGE 0x52
+#define DRAGON_RUSH 0x197
+#define DRAGON_TAIL 0x20D
+#define DRAINING_KISS 0x241
+#define DRAIN_PUNCH 0x199
+#define DREAM_EATER 0x8A
+#define DRILL_PECK 0x41
+#define DRILL_RUN 0x211
+#define DUAL_CHOP 0x212
+#define DYNAMIC_PUNCH 0xDF
+#define EARTH_POWER 0x19E
+#define EARTHQUAKE 0x59
+#define ECHOED_VOICE 0x1F1
+#define EERIE_IMPULSE 0x256
+#define EGG_BOMB 0x79
+#define ELECTRIC_TERRAIN 0x25C
+#define ELECTRIFY 0x246
+#define ELECTRO_BALL 0x1E6
+#define ELECTROWEB 0x20F
+#define EMBARGO 0x175
+#define EMBER 0x34
+#define ENCORE 0xE3
+#define ENDEAVOR 0x11B
+#define ENDURE 0xCB
+#define ENERGY_BALL 0x19C
+#define ENTRAINMENT 0x1EE
+#define ERUPTION 0x11C
+#define EXPLOSION 0x99
+#define EXTRASENSORY 0x146
+#define EXTREME_SPEED 0xF5
+#define FACADE 0x107
+#define FEINT_ATTACK 0xB9
+#define FAIRY_LOCK 0x24B
+#define FAIRY_WIND 0x248
+#define FAKE_OUT 0xFC
+#define FAKE_TEARS 0x139
+#define FALSE_SWIPE 0xCE
+#define FEATHER_DANCE 0x129
+#define FEINT 0x16C
+#define FELL_STINGER 0x235
+#define FIERY_DANCE 0x228
+#define FINAL_GAMBIT 0x203
+#define FIRE_BLAST 0x7E
+#define FIRE_FANG 0x1A8
+#define FIRE_PLEDGE 0x207
+#define FIRE_PUNCH 0x7
+#define FIRE_SPIN 0x53
+#define FISSURE 0x5A
+#define FLAIL 0xAF
+#define FLAME_BURST 0x1E1
+#define FLAME_CHARGE 0x1E8
+#define FLAME_WHEEL 0xAC
+#define FLAMETHROWER 0x35
+#define FLARE_BLITZ 0x18A
+#define FLASH 0x94
+#define FLASH_CANNON 0x1AE
+#define FLATTER 0x104
+#define FLING 0x176
+#define FLOWER_SHIELD 0x243
+#define FLY 0x13
+#define FLYING_PRESS 0x230
+#define FOCUS_BLAST 0x19B
+#define FOCUS_ENERGY 0x74
+#define FOCUS_PUNCH 0x108
+#define FOLLOW_ME 0x10A
+#define FORCE_PALM 0x18B
+#define FORESIGHT 0xC1
+#define FOREST'S_CURSE 0x23B
+#define FOUL_PLAY 0x1EC
+#define FREEZE-DRY 0x23D
+#define FREEZE_SHOCK 0x229
+#define FRENZY_PLANT 0x152
+#define FROST_BREATH 0x20C
+#define FRUSTRATION 0xDA
+#define FURY_ATTACK 0x1F
+#define FURY_CUTTER 0xD2
+#define FURY_SWIPES 0x9A
+#define FUSION_BOLT 0x22F
+#define FUSION_FLARE 0x22E
+#define FUTURE_SIGHT 0xF8
+#define GASTRO_ACID 0x17C
+#define GEAR_GRIND 0x220
+#define GEOMANCY 0x259
+#define GIGA_DRAIN 0xCA
+#define GIGA_IMPACT 0x1A0
+#define GLACIATE 0x225
+#define GLARE 0x89
+#define GRASS_KNOT 0x1BF
+#define GRASS_PLEDGE 0x208
+#define GRASS_WHISTLE 0x140
+#define GRASSY_TERRAIN 0x244
+#define GRAVITY 0x164
+#define GROWL 0x2D
+#define GROWTH 0x4A
+#define GRUDGE 0x120
+#define GUARD_SPLIT 0x1D6
+#define GUARD_SWAP 0x181
+#define GUILLOTINE 0xC
+#define GUNK_SHOT 0x1B9
+#define GUST 0x10
+#define GYRO_BALL 0x168
+#define HAIL 0x102
+#define HAMMER_ARM 0x167
+#define HAPPY_HOUR 0x25B
+#define HARDEN 0x6A
+#define HAZE 0x72
+#define HEAD_CHARGE 0x21F
+#define HEAD_SMASH 0x1C9
+#define HEADBUTT 0x1D
+#define HEAL_BELL 0xD7
+#define HEAL_BLOCK 0x179
+#define HEAL_ORDER 0x1C8
+#define HEAL_PULSE 0x1F9
+#define HEALING_WISH 0x169
+#define HEART_STAMP 0x213
+#define HEART_SWAP 0x187
+#define HEAT_CRASH 0x217
+#define HEAT_WAVE 0x101
+#define HEAVY_SLAM 0x1E4
+#define HELPING_HAND 0x10E
+#define HEX 0x1FA
+#define HIDDEN_POWER 0xED
+#define HIGH_JUMP_KICK 0x88
+#define HOLD_BACK 0x262
+#define HOLD_HANDS 0x267
+#define HONE_CLAWS 0x1D4
+#define HORN_ATTACK 0x1E
+#define HORN_DRILL 0x20
+#define HORN_LEECH 0x214
+#define HOWL 0x150
+#define HURRICANE 0x21E
+#define HYDRO_CANNON 0x134
+#define HYDRO_PUMP 0x38
+#define HYPER_BEAM 0x3F
+#define HYPER_FANG 0x9E
+#define HYPERSPACE_FURY 0x26D
+#define HYPERSPACE_HOLE 0x251
+#define HYPER_VOICE 0x130
+#define HYPNOSIS 0x5F
+#define ICE_BALL 0x12D
+#define ICE_BEAM 0x3A
+#define ICE_BURN 0x22A
+#define ICE_FANG 0x1A7
+#define ICE_PUNCH 0x8
+#define ICE_SHARD 0x1A4
+#define ICICLE_CRASH 0x22C
+#define ICICLE_SPEAR 0x14D
+#define ICY_WIND 0xC4
+#define IMPRISON 0x11E
+#define INCINERATE 0x1FE
+#define INFERNO 0x205
+#define INFESTATION 0x263
+#define INGRAIN 0x113
+#define ION_DELUGE 0x239
+#define IRON_DEFENSE 0x14E
+#define IRON_HEAD 0x1BA
+#define IRON_TAIL 0xE7
+#define JUDGMENT 0x1C1
+#define JUMP_KICK 0x1A
+#define KARATE_CHOP 0x2
+#define KINESIS 0x86
+#define KING'S_SHIELD 0x24C
+#define KNOCK_OFF 0x11A
+#define LAND'S_WRATH 0x268
+#define LAST_RESORT 0x183
+#define LAVA_PLUME 0x1B4
+#define LEAF_BLADE 0x15C
+#define LEAF_STORM 0x1B5
+#define LEAF_TORNADO 0x218
+#define LEECH_LIFE 0x8D
+#define LEECH_SEED 0x49
+#define LEER 0x2B
+#define LICK 0x7A
+#define LIGHT_OF_RUIN 0x269
+#define LIGHT_SCREEN 0x71
+#define LOCK-ON 0xC7
+#define LOVELY_KISS 0x8E
+#define LOW_KICK 0x43
+#define LOW_SWEEP 0x1EA
+#define LUCKY_CHANT 0x17D
+#define LUNAR_DANCE 0x1CD
+#define LUSTER_PURGE 0x127
+#define MACH_PUNCH 0xB7
+#define MAGIC_COAT 0x115
+#define MAGIC_ROOM 0x1DE
+#define MAGICAL_LEAF 0x159
+#define MAGMA_STORM 0x1CF
+#define MAGNET_BOMB 0x1BB
+#define MAGNETIC_FLUX 0x25A
+#define MAGNET_RISE 0x189
+#define MAGNITUDE 0xDE
+#define MAT_BLOCK 0x231
+#define ME_FIRST 0x17E
+#define MEAN_LOOK 0xD4
+#define MEDITATE 0x60
+#define MEGA_DRAIN 0x48
+#define MEGA_KICK 0x19
+#define MEGA_PUNCH 0x5
+#define MEGAHORN 0xE0
+#define MEMENTO 0x106
+#define METAL_BURST 0x170
+#define METAL_CLAW 0xE8
+#define METAL_SOUND 0x13F
+#define METEOR_MASH 0x135
+#define METRONOME 0x76
+#define MILK_DRINK 0xD0
+#define MIMIC 0x66
+#define MIND_READER 0xAA
+#define MINIMIZE 0x6B
+#define MIRACLE_EYE 0x165
+#define MIRROR_COAT 0xF3
+#define MIRROR_MOVE 0x77
+#define MIRROR_SHOT 0x1AD
+#define MIST 0x36
+#define MIST_BALL 0x128
+#define MISTY_TERRAIN 0x245
+#define MOONBLAST 0x249
+#define MOONLIGHT 0xEC
+#define MORNING_SUN 0xEA
+#define MUD-SLAP 0xBD
+#define MUD_BOMB 0x1AA
+#define MUD_SHOT 0x155
+#define MUD_SPORT 0x12C
+#define MUDDY_WATER 0x14A
+#define MYSTICAL_FIRE 0x253
+#define NASTY_PLOT 0x1A1
+#define NATURAL_GIFT 0x16B
+#define NATURE_POWER 0x10B
+#define NEEDLE_ARM 0x12E
+#define NIGHT_DAZE 0x21B
+#define NIGHT_SHADE 0x65
+#define NIGHT_SLASH 0x190
+#define NIGHTMARE 0xAB
+#define NOBLE_ROAR 0x238
+#define NUZZLE 0x261
+#define OBLIVION_WING 0x265
+#define OCTAZOOKA 0xBE
+#define ODOR_SLEUTH 0x13C
+#define OMINOUS_WIND 0x1D2
+#define ORIGIN_PULSE 0x26A
+#define OUTRAGE 0xC8
+#define OVERHEAT 0x13B
+#define PAIN_SPLIT 0xDC
+#define PARABOLIC_CHARGE 0x23A
+#define PARTING_SHOT 0x23F
+#define PAY_DAY 0x6
+#define PAYBACK 0x173
+#define PECK 0x40
+#define PERISH_SONG 0xC3
+#define PETAL_BLIZZARD 0x23C
+#define PETAL_DANCE 0x50
+#define PHANTOM_FORCE 0x236
+#define PIN_MISSILE 0x2A
+#define PLAY_NICE 0x24D
+#define PLAY_ROUGH 0x247
+#define PLUCK 0x16D
+#define POISON_FANG 0x131
+#define POISON_GAS 0x8B
+#define POISON_JAB 0x18E
+#define POISON_POWDER 0x4D
+#define POISON_STING 0x28
+#define POISON_TAIL 0x156
+#define POUND 0x1
+#define POWDER 0x258
+#define POWDER_SNOW 0xB5
+#define POWER_GEM 0x198
+#define POWER_SPLIT 0x1D7
+#define POWER_SWAP 0x180
+#define POWER_TRICK 0x17B
+#define POWER-UP_PUNCH 0x264
+#define POWER_WHIP 0x1B6
+#define PRECIPICE_BLADES 0x26B
+#define PRESENT 0xD9
+#define PROTECT 0xB6
+#define PSYBEAM 0x3C
+#define PSYCH_UP 0xF4
+#define PSYCHIC 0x5E
+#define PSYCHO_BOOST 0x162
+#define PSYCHO_CUT 0x1AB
+#define PSYCHO_SHIFT 0x177
+#define PSYSHOCK 0x1D9
+#define PSYSTRIKE 0x21C
+#define PSYWAVE 0x95
+#define PUNISHMENT 0x182
+#define PURSUIT 0xE4
+#define QUASH 0x1FF
+#define QUICK_ATTACK 0x62
+#define QUICK_GUARD 0x1F5
+#define QUIVER_DANCE 0x1E3
+#define RAGE 0x63
+#define RAGE_POWDER 0x1DC
+#define RAIN_DANCE 0xF0
+#define RAPID_SPIN 0xE5
+#define RAZOR_LEAF 0x4B
+#define RAZOR_SHELL 0x216
+#define RAZOR_WIND 0xD
+#define RECOVER 0x69
+#define RECYCLE 0x116
+#define REFLECT 0x73
+#define REFLECT_TYPE 0x201
+#define REFRESH 0x11F
+#define RELIC_SONG 0x223
+#define REST 0x9C
+#define RETALIATE 0x202
+#define RETURN 0xD8
+#define REVENGE 0x117
+#define REVERSAL 0xB3
+#define ROAR 0x2E
+#define ROAR_OF_TIME 0x1CB
+#define ROCK_BLAST 0x15E
+#define ROCK_CLIMB 0x1AF
+#define ROCK_POLISH 0x18D
+#define ROCK_SLIDE 0x9D
+#define ROCK_SMASH 0xF9
+#define ROCK_THROW 0x58
+#define ROCK_TOMB 0x13D
+#define ROCK_WRECKER 0x1B7
+#define ROLE_PLAY 0x110
+#define ROLLING_KICK 0x1B
+#define ROLLOUT 0xCD
+#define ROOST 0x163
+#define ROTOTILLER 0x233
+#define ROUND 0x1F0
+#define SACRED_FIRE 0xDD
+#define SACRED_SWORD 0x215
+#define SAFEGUARD 0xDB
+#define SAND_ATTACK 0x1C
+#define SAND_TOMB 0x148
+#define SANDSTORM 0xC9
+#define SCALD 0x1F7
+#define SCARY_FACE 0xB8
+#define SCRATCH 0xA
+#define SCREECH 0x67
+#define SEARING_SHOT 0x221
+#define SECRET_POWER 0x122
+#define SECRET_SWORD 0x224
+#define SEED_BOMB 0x192
+#define SEED_FLARE 0x1D1
+#define SEISMIC_TOSS 0x45
+#define SELF-DESTRUCT 0x78
+#define SHADOW_BALL 0xF7
+#define SHADOW_CLAW 0x1A5
+#define SHADOW_FORCE 0x1D3
+#define SHADOW_PUNCH 0x145
+#define SHADOW_SNEAK 0x1A9
+#define SHARPEN 0x9F
+#define SHEER_COLD 0x149
+#define SHELL_SMASH 0x1F8
+#define SHIFT_GEAR 0x1FC
+#define SHOCK_WAVE 0x15F
+#define SIGNAL_BEAM 0x144
+#define SILVER_WIND 0x13E
+#define SIMPLE_BEAM 0x1ED
+#define SING 0x2F
+#define SKETCH 0xA6
+#define SKILL_SWAP 0x11D
+#define SKULL_BASH 0x82
+#define SKY_ATTACK 0x8F
+#define SKY_DROP 0x1FB
+#define SKY_UPPERCUT 0x147
+#define SLACK_OFF 0x12F
+#define SLAM 0x15
+#define SLASH 0xA3
+#define SLEEP_POWDER 0x4F
+#define SLEEP_TALK 0xD6
+#define SLUDGE 0x7C
+#define SLUDGE_BOMB 0xBC
+#define SLUDGE_WAVE 0x1E2
+#define SMACK_DOWN 0x1DF
+#define SMELLING_SALTS 0x109
+#define SMOG 0x7B
+#define SMOKESCREEN 0x6C
+#define SNARL 0x22B
+#define SNATCH 0x121
+#define SNORE 0xAD
+#define SPIKY_SHIELD 0x254
+#define SOAK 0x1E7
+#define SOFT-BOILED 0x87
+#define SOLAR_BEAM 0x4C
+#define SONIC_BOOM 0x31
+#define SPACIAL_REND 0x1CC
+#define SPARK 0xD1
+#define SPIDER_WEB 0xA9
+#define SPIKE_CANNON 0x83
+#define SPIKES 0xBF
+#define SPIT_UP 0xFF
+#define SPITE 0xB4
+#define SPLASH 0x96
+#define SPORE 0x93
+#define STEALTH_ROCK 0x1BE
+#define STEAM_ERUPTION 0x250
+#define STEEL_WING 0xD3
+#define STICKY_WEB 0x234
+#define STOCKPILE 0xFE
+#define STOMP 0x17
+#define STONE_EDGE 0x1BC
+#define STORED_POWER 0x1F4
+#define STORM_THROW 0x1E0
+#define STEAMROLLER 0x219
+#define STRENGTH 0x46
+#define STRING_SHOT 0x51
+#define STRUGGLE 0xA5
+#define STRUGGLE_BUG 0x20A
+#define STUN_SPORE 0x4E
+#define SUBMISSION 0x42
+#define SUBSTITUTE 0xA4
+#define SUCKER_PUNCH 0x185
+#define SUNNY_DAY 0xF1
+#define SUPER_FANG 0xA2
+#define SUPERPOWER 0x114
+#define SUPERSONIC 0x30
+#define SURF 0x39
+#define SWAGGER 0xCF
+#define SWALLOW 0x100
+#define SWEET_KISS 0xBA
+#define SWEET_SCENT 0xE6
+#define SWIFT 0x81
+#define SWITCHEROO 0x19F
+#define SWORDS_DANCE 0xE
+#define SYNCHRONOISE 0x1E5
+#define SYNTHESIS 0xEB
+#define TACKLE 0x21
+#define TAIL_GLOW 0x126
+#define TAIL_SLAP 0x21D
+#define TAIL_WHIP 0x27
+#define TAILWIND 0x16E
+#define TAKE_DOWN 0x24
+#define TAUNT 0x10D
+#define TECHNO_BLAST 0x222
+#define TEETER_DANCE 0x12A
+#define TELEKINESIS 0x1DD
+#define TELEPORT 0x64
+#define THIEF 0xA8
+#define THOUSAND_ARROWS 0x266
+#define THOUSAND_WAVES 0x267
+#define THRASH 0x25
+#define THUNDER 0x57
+#define THUNDER_FANG 0x1A6
+#define THUNDER_PUNCH 0x9
+#define THUNDER_SHOCK 0x54
+#define THUNDER_WAVE 0x56
+#define THUNDERBOLT 0x55
+#define TICKLE 0x141
+#define TOPSY-TURVY 0x240
+#define TORMENT 0x103
+#define TOXIC 0x5C
+#define TOXIC_SPIKES 0x186
+#define TRANSFORM 0x90
+#define TRI_ATTACK 0xA1
+#define TRICK 0x10F
+#define TRICK-OR-TREAT 0x237
+#define TRICK_ROOM 0x1B1
+#define TRIPLE_KICK 0xA7
+#define TRUMP_CARD 0x178
+#define TWINEEDLE 0x29
+#define TWISTER 0xEF
+#define U-TURN 0x171
+#define UPROAR 0xFD
+#define V-CREATE 0x22D
+#define VACUUM_WAVE 0x19A
+#define VENOM_DRENCH 0x257
+#define VENOSHOCK 0x1DA
+#define VICE_GRIP 0xB
+#define VINE_WHIP 0x16
+#define VITAL_THROW 0xE9
+#define VOLT_SWITCH 0x209
+#define VOLT_TACKLE 0x158
+#define WAKE-UP_SLAP 0x166
+#define WATER_GUN 0x37
+#define WATER_PLEDGE 0x206
+#define WATER_PULSE 0x160
+#define WATER_SPORT 0x15A
+#define WATER_SPOUT 0x143
+#define WATERFALL 0x7F
+#define WATER_SHURIKEN 0x252
+#define WEATHER_BALL 0x137
+#define WHIRLPOOL 0xFA
+#define WHIRLWIND 0x12
+#define WIDE_GUARD 0x1D5
+#define WILD_CHARGE 0x210
+#define WILL-O-WISP 0x105
+#define WING_ATTACK 0x11
+#define WISH 0x111
+#define WITHDRAW 0x6E
+#define WONDER_ROOM 0x1D8
+#define WOOD_HAMMER 0x1C4
+#define WORK_UP 0x20E
+#define WORRY_SEED 0x184
+#define WRAP 0x23
+#define WRING_OUT 0x17A
+#define X-SCISSOR 0x194
+#define YAWN 0x119
+#define ZAP_CANNON 0xC0
+#define ZEN_HEADBUTT 0x1AC
 
 #endif /* MOVE_IDS */

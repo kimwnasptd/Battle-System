@@ -26,7 +26,8 @@ with open('C:/Users/Dilshan/Desktop/Battle-System/src/Defines/moves.h', "w") as 
                          new_str += char.capitalize()
                     else:
                          new_str += char
-               f.write("#define " + str(filler[i+1]) + " " + new_str + "\n")
+               f.write("#define " + str(filler[i+1]).replace(" ", "_").upper()
+                       + " " + new_str + "\n")
           except (TypeError):
                pass
     

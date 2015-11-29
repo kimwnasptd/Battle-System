@@ -8,6 +8,7 @@
 #include "./Defines/weather.h"
 #include "./Defines/items.h"
 
+
 u8 is_type(struct battler *attacker, u8 type) {
 	int i;
 	for (i = 0; i < 3; i++) {
@@ -209,7 +210,7 @@ u8 get_ability(struct battler *attacker, struct battle_flags *flags) {
 			case SOLID_ROCK:
 			case SOUNDPROOF:
 			case STICKY_HOLD:
-			case STORM_DWEATHER_RAIN:
+			case STORM_DRAIN:
 			case STURDY:
 			case SUCTION_CUPS:
 			case TANGLED_FEET:
@@ -1075,7 +1076,8 @@ u8 get_base_power(u8 attacker_id, u8 defender_id, struct move *attack) {
 			break;
 		case SOLAR_BEAM:
 			u8 weather = get_weather();
-			if ((weather == WEATHER_SANDSTORM) || (weather == WEATHER_RAIN) || (weather == WEATHER_HEAVY_RAIN) || (weather == WEATHER_HAIL)) {
+			if ((weather == WEATHER_SANDSTORM) || (weather == WEATHER_RAIN) || 
+			(weather == WEATHER_HEAVY_RAIN) || (weather == WEATHER_HAIL)) {
 				atk_base_power = 60;
 				break;
 			}
@@ -1111,7 +1113,7 @@ u8 get_base_power(u8 attacker_id, u8 defender_id, struct move *attack) {
 				case HEAD_SMASH:
 				case HIGH_JUMP_KICK:
 				case JUMP_KICK:
-				case LIGHT_OF_WEATHER_RAIN:
+				case LIGHT_OF_RAIN:
 				case SUBMISSION:
 				case TAKE_DOWN:
 				case VOLT_TACKLE:
@@ -1129,7 +1131,7 @@ u8 get_base_power(u8 attacker_id, u8 defender_id, struct move *attack) {
 				case BULLET_PUNCH:
 				case COMET_PUNCH:
 				case DIZZY_PUNCH:
-				case DWEATHER_RAIN_PUNCH:
+				case DRAIN_PUNCH:
 				case DYNAMIC_PUNCH:
 				case FIRE_PUNCH
 				case FOCUS_PUNCH:
@@ -1410,8 +1412,10 @@ u32 get_base_defense(u8 attacker_id, u8 defender_id, struct move *attack) {
 		}		
 	} 
 	
+
 	// WEATHER_SANDSTORM boosts 
-	if ((get_weather() == WEATHER_SANDSTORM) && (is_type(attacker, ROCK)) && (attack->is_special)) {
+	if ((get_weather() == WEATHER_SANDSTORM) && (is_type(attacker, ROCK)) && 
+	(attack->is_special)) {
 		defense = apply_dmg_mod(defense, 50, 1);
 	}
 	
@@ -1474,7 +1478,6 @@ u8 weather_dmg_increase(struct battler *attacker, struct move *attack) {
 				return 150;
 			}
 			if (attack->type == WATER) {
-				set_message(1);
 				return 50;
 			}
 			break;
@@ -1491,7 +1494,6 @@ u8 weather_dmg_increase(struct battler *attacker, struct move *attack) {
 		case WEATHER_RAIN:
 			// water moves up & fire moves down 50%
 			if (attack->type == FIRE) {
-				set_message(1);
 				return 50;
 			}
 			if (attack->type == WATER) {
@@ -1722,7 +1724,7 @@ u32 damage_calculator(u8 attacker_id, u8 defender_id, struct move *attack, u8 ab
 	struct battler *attacker = *battle_field->battlers[attacker_id];
 	struct battler *defender = *battle_field->battlers[defender_id];
 	set_message(0);
-	
+
 	/* Check if special case dmg move*/
 	switch (attack->move_id) {
 		case PSYWAVE:
