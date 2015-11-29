@@ -1,10 +1,12 @@
 #include "battle_engine_resource.h"
 #include "damage_calculator.h"
 #include "multipurpose_resources.c"
-#include "abilities.h"
-#include "moves.h"
-#include "get_attr.h"
-#include "types.h"
+#include "./Defines/abilities.h"
+#include "./Defines/moves.h"
+#include "./Defines/get_attr.h"
+#include "./Defines/types.h"
+#include "./Defines/weather.h"
+#include "./Defines/items.h"
 
 
 u8 is_type(struct battler *attacker, u8 type) {
@@ -935,7 +937,7 @@ u8 get_base_power(u8 attacker_id, u8 defender_id, struct move *attack) {
 					atk_base_power = 100;
 					break;
 				default:
-					set_message(MOVE_FAILED);
+					set_message(1);
 					atk_base_power = 0;
 					break;
 			};
@@ -1074,7 +1076,8 @@ u8 get_base_power(u8 attacker_id, u8 defender_id, struct move *attack) {
 			break;
 		case SOLAR_BEAM:
 			u8 weather = get_weather();
-			if ((weather == SANDSTORM) || (weather == RAIN) || (weather == HEAVY_RAIN) || (weather == HAIL)) {
+			if ((weather == WEATHER_SANDSTORM) || (weather == WEATHER_RAIN) || 
+			(weather == WEATHER_HEAVY_RAIN) || (weather == WEATHER_HAIL)) {
 				atk_base_power = 60;
 				break;
 			}
@@ -1155,7 +1158,7 @@ u8 get_base_power(u8 attacker_id, u8 defender_id, struct move *attack) {
 			break;
 		case SAND_FORCE:
 			u8 weather = get_weather();
-			if ((weather == SANDSTORM) && 
+			if ((weather == WEATHER_SANDSTORM) && 
 			((attack->type == STEEL) || (attack->type == ROCK) || (attack->type == GROUND))){
 				atk_base_power = apply_dmg_mod(atk_base_power, 30, 1);
 			}
@@ -1303,7 +1306,7 @@ u32 get_base_attack(u8 attacker_id, u8 defender_id, struct move *attack) {
 			}
 			break;
 		case SOLAR_POWER:
-			if ((weather == SUNNY) || (weather == HARSH_SUN)) {
+			if ((weather == WEATHER_SUNNY) || (weather == WEATHER_HARSH_SUNLIGHT)) {
 				if (attack->is_special == 1) {
 				ad_dmg = apply_dmg_mod(ad_dmg, 50, 1);
 				}
@@ -1321,7 +1324,7 @@ u32 get_base_attack(u8 attacker_id, u8 defender_id, struct move *attack) {
 			break;
 		case FLOWER_GIFT:
 			if ((get_species(attacker) == CHERRIM) && 
-			((weather == SUNNY) || (weather == HARSH_SUN))) {
+			((weather == WEATHER_SUNNY) || (weather == WEATHER_HARSH_SUNLIGHT))) {
 				if (attack->is_special == 1) {
 					ad_dmg = apply_dmg_mod(ad_dmg, 50, 1);
 				}
@@ -1409,8 +1412,10 @@ u32 get_base_defense(u8 attacker_id, u8 defender_id, struct move *attack) {
 		}		
 	} 
 	
-	// sandstorm boosts 
-	if ((get_weather() == SANDSTORM) && (is_type(attacker, ROCK)) && (attack->is_special)) {
+
+	// WEATHER_SANDSTORM boosts 
+	if ((get_weather() == WEATHER_SANDSTORM) && (is_type(attacker, ROCK)) && 
+	(attack->is_special)) {
 		defense = apply_dmg_mod(defense, 50, 1);
 	}
 	
@@ -1457,47 +1462,45 @@ u8 weather_dmg_increase(struct battler *attacker, struct move *attack) {
 
 	u8 weather = get_weather()];
 	switch (weather) {
-		case HARSH_SUN:
+		case WEATHER_HARSH_SUNLIGHT:
 			// water moves fail & fire moves up 50%
 			if (attack->type == FIRE) {
 				return 150;
 			}
 			if (attack->type == WATER) {
-				set_message(MOVE_FAILED);
+				set_message(1);
 				return 0;
 			}
 			break; //unaffected by sun
-		case SUNNY:
+		case WEATHER_SUNNY:
 			//water moves down, fire moves up 50%
 			if (attack->type == FIRE) {
 				return 150;
 			}
 			if (attack->type == WATER) {
-				set_message(MOVE_FAILED);
 				return 50;
 			}
 			break;
-		case HEAVY_RAIN:
+		case WEATHER_HEAVY_RAIN:
 			// water moves 50% up & fire moves fail
 			if (attack->type == FIRE) {
-				set_message(MOVE_FAILED);
+				set_message(1);
 				return 0;
 			}
 			if (attack->type == WATER) {
 				return 150;
 			}
 			break;
-		case RAIN:
+		case WEATHER_RAIN:
 			// water moves up & fire moves down 50%
 			if (attack->type == FIRE) {
-				set_message(MOVE_FAILED);
 				return 50;
 			}
 			if (attack->type == WATER) {
 				return 150;
 			}
 			break;
-		case MYSTERIOUS_AIR_CURRENT:
+		case WEATHER_MYSTERIOUS_AIR_CURRENT:
 			// if flying type, deal half dmg is super-effective
 			if (is_type(attacker, FLYING)) {
 				if (not_immune(attacker, attack) > 100) {
@@ -1720,8 +1723,8 @@ u32 damage_calculator(u8 attacker_id, u8 defender_id, struct move *attack, u8 ab
 
 	struct battler *attacker = *battle_field->battlers[attacker_id];
 	struct battler *defender = *battle_field->battlers[defender_id];
-	set_message(NONE);
-	
+	set_message(0);
+
 	/* Check if special case dmg move*/
 	switch (attack->move_id) {
 		case PSYWAVE:
@@ -1729,7 +1732,7 @@ u32 damage_calculator(u8 attacker_id, u8 defender_id, struct move *attack, u8 ab
 				// (x + 50) * level st. 0<= x <= 100
 				return ((random(100) + 50) / 100) * attacker->level;
 			} else {
-				set_message(IMMUNE);
+				set_message(2);
 				return 0;
 			}
 			break;
@@ -1738,7 +1741,7 @@ u32 damage_calculator(u8 attacker_id, u8 defender_id, struct move *attack, u8 ab
 				// does attacker's level in dmg
 				return attacker->level;
 			} else {
-				set_message(IMMUNE);
+				set_message(2);
 				return 0;
 			}
 			break;
@@ -1747,7 +1750,7 @@ u32 damage_calculator(u8 attacker_id, u8 defender_id, struct move *attack, u8 ab
 				// always 20 dmg
 				return 20
 			} else {
-				set_message(IMMUNE);
+				set_message(2);
 				return 0;
 			}
 			break;
@@ -1756,7 +1759,7 @@ u32 damage_calculator(u8 attacker_id, u8 defender_id, struct move *attack, u8 ab
 				// half the defender's HP
 				return apply_dmg_mod(defender->current_hp, 50, 0);
 			} else {
-				set_message(IMMUNE);
+				set_message(2);
 				return 0;
 			}
 			break;
@@ -1765,7 +1768,7 @@ u32 damage_calculator(u8 attacker_id, u8 defender_id, struct move *attack, u8 ab
 				// always 40 dmg
 				return 40
 			} else {
-				set_message(IMMUNE);
+				set_message(2);
 				return 0;
 			}
 			break;
@@ -1777,11 +1780,11 @@ u32 damage_calculator(u8 attacker_id, u8 defender_id, struct move *attack, u8 ab
 				if (attacker_hp_current < defender_hp_current) {
 					return defender_hp_current - attacker_hp_current;
 				} else {
-					set_message(MOVE_FAILED);
+					set_message(1);
 					return 0;
 				}
 			} else {
-				set_message(IMMUNE);
+				set_message(2);
 				return 0;
 			}
 			break;
@@ -1790,7 +1793,7 @@ u32 damage_calculator(u8 attacker_id, u8 defender_id, struct move *attack, u8 ab
 				// do amount of health of attacker
 				return attacker->current_hp;
 			} else {
-				set_message(IMMUNE);
+				set_message(2);
 				return 0;
 			}
 			break;
@@ -1801,11 +1804,11 @@ u32 damage_calculator(u8 attacker_id, u8 defender_id, struct move *attack, u8 ab
 				(attacker->damage_taken)) {
 					return (attacker->damage_taken) * 2;
 				} else {
-					set_message(MOVE_FAILED);
+					set_message(1);
 					return 0;
 				}
 			} else {
-				set_message(MOVE_FAILED);
+				set_message(1);
 				return 0;
 			}
 			break;
@@ -1815,11 +1818,11 @@ u32 damage_calculator(u8 attacker_id, u8 defender_id, struct move *attack, u8 ab
 				if ((attacker->damage_taken_type) && (attacker->damage_taken)) {
 					return (attacker->damage_taken) * 2;
 				} else {
-					set_message(MOVE_FAILED);
+					set_message(1);
 					return 0;
 				}
 			} else {
-				set_message(IMMUNE);
+				set_message(2);
 				return 0;
 			}
 			break;
@@ -1827,14 +1830,14 @@ u32 damage_calculator(u8 attacker_id, u8 defender_id, struct move *attack, u8 ab
 			if (not_immune(defender, attack->type)) {
 				// fails if user took no dmg, or is faster
 				if (!attacker->damage_taken) {
-					set_message(MOVE_FAILED);
+					set_message(1);
 					return 0;
 				} else {
 					// 50% increased damage
 					return apply_dmg_mod(attacker->damage_taken, 50, 1);
 				}
 			} else {
-				set_message(IMMUNE);
+				set_message(2);
 				return 0;
 			}
 			break;
@@ -1845,7 +1848,7 @@ u32 damage_calculator(u8 attacker_id, u8 defender_id, struct move *attack, u8 ab
 					// attacker unleashed bide dmg
 					attacker->bide -= 1;
 					if (attacker->damage_taken == 0) {
-						set_message(MOVE_FAILED);
+						set_message(1);
 						return 0;
 					} else {
 						return attacker->damage_taken;
@@ -1854,19 +1857,19 @@ u32 damage_calculator(u8 attacker_id, u8 defender_id, struct move *attack, u8 ab
 				case 0:
 					// freshly used bide
 					attacker->damage_taken = 0;
-					set_message(BIDE_USED); // x is storing energy
+					set_message(4); // x is storing energy
 					attacker->bide = 2;
 					return 0;
 					break;
 				case default:
 					// charging up bide still
 					attacker->bide -= 1;
-					set_message(BIDE_USED);
+					set_message(4);
 					return 0;
 					break;
 				};
 			} else {
-				set_message(IMMUNE);
+				set_message(2);
 				return 0;
 			}
 		default:
@@ -1940,7 +1943,7 @@ u32 damage_calculator(u8 attacker_id, u8 defender_id, struct move *attack, u8 ab
 	// get type damage boosting
 	u8 type_dmg = not_immune(defender, attack->type);
 	if (!type_dmg) {
-		set_message(IMMUNE);
+		set_message(2);
 		return 0;
 	} 
 	
