@@ -13,7 +13,7 @@ with open('C:/Users/Dilshan/Desktop/Battle-System/src/Defines/items.h', "w") as 
                     new_str += char.capitalize()
                else:
                     new_str += char
-          f.write("#define " + (line.split("\t")[2]).upper().replace(" ", "_").replace("-", "_")
+          f.write("#define " + (line.split("\t")[2]).upper().replace(" ", "_").replace("-", "_").replace(".", "").replace("'","")
                   + " " + new_str + "\n")
 
      #header guards end
