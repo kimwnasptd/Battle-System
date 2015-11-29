@@ -6,7 +6,7 @@
 #define MASTER_BALL 0x1
 #define ULTRA_BALL 0x2
 #define GREAT_BALL 0x3
-#define POKé_BALL 0x4
+#define POKE_BALL 0x4
 #define SAFARI_BALL 0x5
 #define NET_BALL 0x6
 #define DIVE_BALL 0x7
@@ -65,7 +65,7 @@
 #define X_ACCURACY 0x3C
 #define X_SP_ATK 0x3D
 #define X_SP_DEF 0x3E
-#define POKé_DOLL 0x3F
+#define POKE_DOLL 0x3F
 #define FLUFFY_TAIL 0x40
 #define BLUE_FLUTE 0x41
 #define YELLOW_FLUTE 0x42
@@ -434,7 +434,7 @@
 #define EXPLORER_KIT 0x1AC
 #define LOOT_SACK 0x1AD
 #define RULE_BOOK 0x1AE
-#define POKé_RADAR 0x1AF
+#define POKE_RADAR 0x1AF
 #define POINT_CARD 0x1B0
 #define JOURNAL 0x1B1
 #define SEAL_CASE 0x1B2
@@ -582,7 +582,7 @@
 #define LIBERTY_PASS 0x23E
 #define PASS_ORB 0x23F
 #define DREAM_BALL 0x240
-#define POKé_TOY 0x241
+#define POKE_TOY 0x241
 #define PROP_CASE 0x242
 #define DRAGON_SKULL 0x243
 #define BALM_MUSHROOM 0x244
@@ -623,10 +623,10 @@
 #define DIRE_HIT_3 0x267
 #define LIGHT_STONE 0x268
 #define DARK_STONE 0x269
-#define  0x26A
-#define  0x26B
-#define  0x26B
-#define  0x26C
+#define TM93 0x26A
+#define TM94 0x26B
+#define TM94 0x26B
+#define TM95 0x26C
 #define B2W2_XTRANSCEIVER_M 0x26D
 #define GOD_STONE 0x26E
 #define GRAM 0x26F
@@ -657,7 +657,7 @@
 #define LUMINOUS_MOSS 0x288
 #define SNOWBALL 0x289
 #define SAFETY_GOGGLES 0x28A
-#define POKé_FLUTE_VI 0x28B
+#define POKE_FLUTE_VI 0x28B
 #define RICH_MULCH 0x28C
 #define SURPRISE_MULCH 0x28D
 #define BOOST_MULCH 0x28E
@@ -696,11 +696,11 @@
 #define KEE_BERRY 0x2AF
 #define MARANGA_BERRY 0x2B0
 #define SPRINKLOTAD 0x2B1
-#define  0x2B2
-#define  0x2B3
-#define  0x2B4
+#define TM96 0x2B2
+#define TM97 0x2B3
+#define TM98 0x2B4
 #define TM_FAIRY 0x2B5
-#define  0x2B6
+#define TM100 0x2B6
 #define POWER_PLANT_PASS 0x2B7
 #define MEGA_RING 0x2B8
 #define INTRIGUING_STONE 0x2B9
@@ -732,7 +732,7 @@
 #define DEVON_GOODS 0x2D1
 #define SOOT_SACK 0x2D2
 #define BASEMENT_KEY_III 0x2D3
-#define POKéBLOCK_KIT 0x2D4
+#define POKEBLOCK_KIT 0x2D4
 #define LETTER 0x2D5
 #define EON_TICKET 0x2D6
 #define SCANNER 0x2D7

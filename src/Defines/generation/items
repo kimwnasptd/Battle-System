@@ -2,7 +2,7 @@
 001	0x0001	Master Ball	Master Ball	Bag Items pocket icon.png	Items pocket
 002	0x0002	Ultra Ball	Ultra Ball	Bag Items pocket icon.png	Items pocket
 003	0x0003	Great Ball	Great Ball	Bag Items pocket icon.png	Items pocket
-004	0x0004	Poké Ball	Poké Ball	Bag Items pocket icon.png	Items pocket
+004	0x0004	PokE Ball	PokE Ball	Bag Items pocket icon.png	Items pocket
 005	0x0005	Safari Ball	Safari Ball	Bag Items pocket icon.png	Items pocket
 006	0x0006	Net Ball	Net Ball	Bag Items pocket icon.png	Items pocket
 007	0x0007	Dive Ball	Dive Ball	Bag Items pocket icon.png	Items pocket
@@ -61,7 +61,7 @@
 060	0x003C	X Accuracy	X Accuracy	Bag Items pocket icon.png	Items pocket
 061	0x003D	X Sp. Atk	X Sp. Atk	Bag Items pocket icon.png	Items pocket
 062	0x003E	X Sp. Def	X Sp. Def	Bag Items pocket icon.png	Items pocket
-063	0x003F	Poké Doll	Poké Doll	Bag Items pocket icon.png	Items pocket
+063	0x003F	PokE Doll	PokE Doll	Bag Items pocket icon.png	Items pocket
 064	0x0040	Fluffy Tail	Fluffy Tail	Bag Items pocket icon.png	Items pocket
 065	0x0041	Blue Flute	Blue Flute	Bag Items pocket icon.png	Items pocket
 066	0x0042	Yellow Flute	Yellow Flute	Bag Items pocket icon.png	Items pocket
@@ -430,7 +430,7 @@
 428	0x01AC	Explorer Kit	Explorer Kit	Bag Key items pocket icon.png	Key items pocket
 429	0x01AD	Loot Sack	Loot Sack	Bag Key items pocket icon.png	Key items pocket
 430	0x01AE	Rule Book	Rule Book	Bag Key items pocket icon.png	Key items pocket
-431	0x01AF	Poké Radar	Poké Radar	Bag Key items pocket icon.png	Key items pocket
+431	0x01AF	PokE Radar	PokE Radar	Bag Key items pocket icon.png	Key items pocket
 432	0x01B0	Point Card	Point Card	Bag Key items pocket icon.png	Key items pocket
 433	0x01B1	Journal	Journal	Bag Key items pocket icon.png	Key items pocket
 434	0x01B2	Seal Case	Seal Case	Bag Key items pocket icon.png	Key items pocket
@@ -578,7 +578,7 @@
 574	0x023E	Liberty Pass	Liberty Pass	Bag Key items pocket icon.png	Key items pocket
 575	0x023F	Pass Orb	Pass Orb	Bag Items pocket icon.png	Items pocket
 576	0x0240	Dream Ball	Dream Ball	Bag Items pocket icon.png	Items pocket
-577	0x0241	Poké Toy	Poké Toy	Bag Items pocket icon.png	Items pocket
+577	0x0241	PokE Toy	PokE Toy	Bag Items pocket icon.png	Items pocket
 578	0x0242	Prop Case	Prop Case	Bag Key items pocket icon.png	Key items pocket
 579	0x0243	Dragon Skull	Dragon Skull	Bag Key items pocket icon.png	Key items pocket
 580	0x0244	Balm Mushroom	Balm Mushroom	Bag Items pocket icon.png	Items pocket
@@ -619,10 +619,10 @@
 615	0x0267	Dire Hit 3	Dire Hit 3	Bag Unknown pocket icon.png	Unknown pocket
 616	0x0268	Light Stone	Light Stone	Bag Key items pocket icon.png	Key items pocket
 617	0x0269	Dark Stone	Dark Stone	Bag Key items pocket icon.png	Key items pocket
-618	0x026A		TM93	Bag TMs and HMs pocket icon.png	TMs and HMs pocket
-619	0x026B		TM94	Bag TMs and HMs pocket icon.png	TMs and HMs pocket
-619	0x026B		TM94	Bag TMs and HMs pocket icon.png	TMs and HMs pocket
-620	0x026C		TM95	Bag TMs and HMs pocket icon.png	TMs and HMs pocket
+618	0x026A	TM93	Bag TMs and HMs pocket icon.png	TMs and HMs pocket
+619	0x026B	TM94	Bag TMs and HMs pocket icon.png	TMs and HMs pocket
+619	0x026B	TM94	Bag TMs and HMs pocket icon.png	TMs and HMs pocket
+620	0x026C	TM95	Bag TMs and HMs pocket icon.png	TMs and HMs pocket
 621	0x026D	B2W2 Xtransceiver m	Xtransceiver	Bag Key items pocket icon.png	Key items pocket
 622	0x026E	God Stone	???	Bag Unknown pocket icon.png	Unknown pocket
 623	0x026F	Gram	Gram 1	Bag Key items pocket icon.png	Key items pocket
@@ -653,7 +653,7 @@
 648	0x0288	Luminous Moss	Luminous Moss	Bag Items pocket icon.png	Items pocket
 649	0x0289	Snowball	Snowball	Bag Items pocket icon.png	Items pocket
 650	0x028A	Safety Goggles	Safety Goggles	Bag Items pocket icon.png	Items pocket
-651	0x028B	Poké Flute VI	Poké Flute	Bag Key items pocket icon.png	Key items pocket
+651	0x028B	PokE Flute VI	PokE Flute	Bag Key items pocket icon.png	Key items pocket
 652	0x028C	Rich Mulch	Rich Mulch	Bag Items pocket icon.png	Items pocket
 653	0x028D	Surprise Mulch	Surprise Mulch	Bag Items pocket icon.png	Items pocket
 654	0x028E	Boost Mulch	Boost Mulch	Bag Items pocket icon.png	Items pocket
@@ -692,11 +692,11 @@
 687	0x02AF	Kee Berry	Kee Berry	Bag Berries pocket icon.png	Berries pocket
 688	0x02B0	Maranga Berry	Maranga Berry	Bag Berries pocket icon.png	Berries pocket
 689	0x02B1	Sprinklotad	Sprinklotad	Bag Key items pocket icon.png	Key items pocket
-690	0x02B2		TM96	Bag TMs and HMs pocket icon.png	TMs and HMs pocket
-691	0x02B3		TM97	Bag TMs and HMs pocket icon.png	TMs and HMs pocket
-692	0x02B4		TM98	Bag TMs and HMs pocket icon.png	TMs and HMs pocket
+690	0x02B2	TM96	Bag TMs and HMs pocket icon.png	TMs and HMs pocket
+691	0x02B3	TM97	Bag TMs and HMs pocket icon.png	TMs and HMs pocket
+692	0x02B4	TM98	Bag TMs and HMs pocket icon.png	TMs and HMs pocket
 693	0x02B5	TM Fairy	TM99	Bag TMs and HMs pocket icon.png	TMs and HMs pocket
-694	0x02B6		TM100	Bag TMs and HMs pocket icon.png	TMs and HMs pocket
+694	0x02B6	TM100	Bag TMs and HMs pocket icon.png	TMs and HMs pocket
 695	0x02B7	Power Plant Pass	Power Plant Pass	Bag Key items pocket icon.png	Key items pocket
 696	0x02B8	Mega Ring	Mega Ring	Bag Key items pocket icon.png	Key items pocket
 697	0x02B9	Intriguing Stone	Intriguing Stone	Bag Key items pocket icon.png	Key items pocket
@@ -728,7 +728,7 @@
 721	0x02D1	Devon Goods	Devon Parts	Bag Key items pocket icon.png	Key items pocket
 722	0x02D2	Soot Sack	Soot Sack	Bag Key items pocket icon.png	Key items pocket
 723	0x02D3	Basement Key III	Basement Key	Bag Key items pocket icon.png	Key items pocket
-724	0x02D4	Pokéblock Kit	Pokéblock Kit	Bag Key items pocket icon.png	Key items pocket
+724	0x02D4	PokEblock Kit	PokEblock Kit	Bag Key items pocket icon.png	Key items pocket
 725	0x02D5	Letter	Letter	Bag Key items pocket icon.png	Key items pocket
 726	0x02D6	Eon Ticket	Eon Ticket	Bag Key items pocket icon.png	Key items pocket
 727	0x02D7	Scanner	Scanner	Bag Key items pocket icon.png	Key items pocket
