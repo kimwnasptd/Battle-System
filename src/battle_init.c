@@ -2,6 +2,5 @@
 
 void battle_init(void) {
 /* Set up: todo */
-
-	};
+	return;
 }
