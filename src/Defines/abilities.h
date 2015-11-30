@@ -1,5 +1,5 @@
-#ifndef ABILITY_IDS
-#define ABILITY_IDS
+#ifndef ABILITY_IDS_H
+#define ABILITY_IDS_H
 
 
 #define NO_ABILITY 0x0
@@ -195,4 +195,4 @@
 #define DESOLATE_LAND 0xBE
 #define DELTA_STREAM 0xBF
 
-#endif /* ABILITY_IDS */
+#endif /* ABILITY_IDS_H */

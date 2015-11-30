@@ -25,13 +25,14 @@ struct battle_config {
 	u8 ally_backsprites[3];
 };
 
-struct battle_flags {
+struct flags {
 	u8 effectiveness; // 1 Not effective, 2 super, 0 normal
 	u8 crit_flag : 1;
 	u8 health_was_full : 1;
 	u8 abilities_disabled : 1;
 	u8 items_disabled : 1;
 	u8 pursuit_flag : 1;
+	u8 filler : 3;
 };
 
 struct battler {
@@ -48,6 +49,7 @@ struct battler {
 	u16 speed;
 	u16 sp_attack;
 	u16 sp_defense;
+	u32 ailment;
 	u16 moves_used[4];
 	u16 move_used_last;
 	u8 last_move_target;
@@ -186,9 +188,9 @@ struct battle_field {
 	struct field_modifiers modifiers;
 	struct battler battlers[6]; // potential for 6 on field at once
 	struct pokemon *battle_data[6];
-	struct battle_flags b_flags;
-	u8 ally[6] : 6;
-	u8 ally_padding : 2;
+	struct battle_flags *b_flags;
+	u16 moves_used[6]; // moves used this turn 
+	u8 ally[6];
 };
 
 struct pokemon {
@@ -222,5 +224,6 @@ struct evolution_entry {
 
 extern struct evolution_entry evolution_table[species_count];
 extern struct pokemon pokemon_bank[12];
+extern struct battle_field battle_field;
 
 #endif /* BATTLE_LOCAL_RESOURCES */

@@ -1,5 +1,5 @@
-#ifndef WEATHER_IDS
-#define WEATHER_IDS
+#ifndef WEATHER_IDS_H
+#define WEATHER_IDS_H
 
 #define WEATHER_NONE 0x0
 #define WEATHER_SUNNY 0x1
@@ -13,4 +13,4 @@
 #define WEATHER_MYSTERIOUS_AIR_CURRENT 0x9
 
 
-#endif /* WEATHER_IDS */
+#endif /* WEATHER_IDS_H */

@@ -1,5 +1,5 @@
-#ifndef MOVE_IDS
-#define MOVE_IDS
+#ifndef MOVE_IDS_H
+#define MOVE_IDS_H
 
 
 #define ABSORB 0x47
@@ -32,7 +32,7 @@
 #define AURORA_BEAM 0x3E
 #define AUTOTOMIZE 0x1DB
 #define AVALANCHE 0x1A3
-#define BABY-DOLL_EYES 0x260
+#define BABYDOLL_EYES 0x260
 #define BARRAGE 0x8C
 #define BARRIER 0x70
 #define BATON_PASS 0xE2
@@ -118,7 +118,7 @@
 #define DIVE 0x123
 #define DIZZY_PUNCH 0x92
 #define DOOM_DESIRE 0x161
-#define DOUBLE-EDGE 0x26
+#define DOUBLEEDGE 0x26
 #define DOUBLE_HIT 0x1CA
 #define DOUBLE_KICK 0x18
 #define DOUBLE_SLAP 0x3
@@ -198,7 +198,7 @@
 #define FORESIGHT 0xC1
 #define FORESTS_CURSE 0x23B
 #define FOUL_PLAY 0x1EC
-#define FREEZE-DRY 0x23D
+#define FREEZEDRY 0x23D
 #define FREEZE_SHOCK 0x229
 #define FRENZY_PLANT 0x152
 #define FROST_BREATH 0x20C
@@ -290,9 +290,9 @@
 #define JUMP_KICK 0x1A
 #define KARATE_CHOP 0x2
 #define KINESIS 0x86
-#define KING'S_SHIELD 0x24C
+#define KINGS_SHIELD 0x24C
 #define KNOCK_OFF 0x11A
-#define LAND'S_WRATH 0x268
+#define LANDS_WRATH 0x268
 #define LAST_RESORT 0x183
 #define LAVA_PLUME 0x1B4
 #define LEAF_BLADE 0x15C
@@ -304,7 +304,7 @@
 #define LICK 0x7A
 #define LIGHT_OF_RUIN 0x269
 #define LIGHT_SCREEN 0x71
-#define LOCK-ON 0xC7
+#define LOCKON 0xC7
 #define LOVELY_KISS 0x8E
 #define LOW_KICK 0x43
 #define LOW_SWEEP 0x1EA
@@ -348,7 +348,7 @@
 #define MOONBLAST 0x249
 #define MOONLIGHT 0xEC
 #define MORNING_SUN 0xEA
-#define MUD-SLAP 0xBD
+#define MUDSLAP 0xBD
 #define MUD_BOMB 0x1AA
 #define MUD_SHOT 0x155
 #define MUD_SPORT 0x12C
@@ -398,7 +398,7 @@
 #define POWER_SPLIT 0x1D7
 #define POWER_SWAP 0x180
 #define POWER_TRICK 0x17B
-#define POWER-UP_PUNCH 0x264
+#define POWERUP_PUNCH 0x264
 #define POWER_WHIP 0x1B6
 #define PRECIPICE_BLADES 0x26B
 #define PRESENT 0xD9
@@ -468,7 +468,7 @@
 #define SEED_BOMB 0x192
 #define SEED_FLARE 0x1D1
 #define SEISMIC_TOSS 0x45
-#define SELF-DESTRUCT 0x78
+#define SELFDESTRUCT 0x78
 #define SHADOW_BALL 0xF7
 #define SHADOW_CLAW 0x1A5
 #define SHADOW_FORCE 0x1D3
@@ -506,7 +506,7 @@
 #define SNORE 0xAD
 #define SPIKY_SHIELD 0x254
 #define SOAK 0x1E7
-#define SOFT-BOILED 0x87
+#define SOFTBOILED 0x87
 #define SOLAR_BEAM 0x4C
 #define SONIC_BOOM 0x31
 #define SPACIAL_REND 0x1CC
@@ -572,22 +572,22 @@
 #define THUNDER_WAVE 0x56
 #define THUNDERBOLT 0x55
 #define TICKLE 0x141
-#define TOPSY-TURVY 0x240
+#define TOPSYTURVY 0x240
 #define TORMENT 0x103
 #define TOXIC 0x5C
 #define TOXIC_SPIKES 0x186
 #define TRANSFORM 0x90
 #define TRI_ATTACK 0xA1
 #define TRICK 0x10F
-#define TRICK-OR-TREAT 0x237
+#define TRICKORTREAT 0x237
 #define TRICK_ROOM 0x1B1
 #define TRIPLE_KICK 0xA7
 #define TRUMP_CARD 0x178
 #define TWINEEDLE 0x29
 #define TWISTER 0xEF
-#define U-TURN 0x171
+#define UTURN 0x171
 #define UPROAR 0xFD
-#define V-CREATE 0x22D
+#define VCREATE 0x22D
 #define VACUUM_WAVE 0x19A
 #define VENOM_DRENCH 0x257
 #define VENOSHOCK 0x1DA
@@ -596,7 +596,7 @@
 #define VITAL_THROW 0xE9
 #define VOLT_SWITCH 0x209
 #define VOLT_TACKLE 0x158
-#define WAKE-UP_SLAP 0x166
+#define WAKEUP_SLAP 0x166
 #define WATER_GUN 0x37
 #define WATER_PLEDGE 0x206
 #define WATER_PULSE 0x160
@@ -609,7 +609,7 @@
 #define WHIRLWIND 0x12
 #define WIDE_GUARD 0x1D5
 #define WILD_CHARGE 0x210
-#define WILL-O-WISP 0x105
+#define WILLOWISP 0x105
 #define WING_ATTACK 0x11
 #define WISH 0x111
 #define WITHDRAW 0x6E
@@ -619,9 +619,9 @@
 #define WORRY_SEED 0x184
 #define WRAP 0x23
 #define WRING_OUT 0x17A
-#define X-SCISSOR 0x194
+#define XSCISSOR 0x194
 #define YAWN 0x119
 #define ZAP_CANNON 0xC0
 #define ZEN_HEADBUTT 0x1AC
 
-#endif /* MOVE_IDS */
+#endif /* MOVE_IDS_H */

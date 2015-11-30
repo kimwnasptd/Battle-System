@@ -13,7 +13,15 @@ anim_poke = 0x082349BC;
 rotscale_empty = 0x08231CFC;
 oac_nullsub = 0x0810BB89;
 obj_ids_to_display = 0x02021800;
+evolution_table = 0x08259754;
+pokemon_bank = 0x0202402C;
 
+/*
+* Place holder data
+*/
+
+sheer_force_t = 0x0;
+mega_items_t = 0x0;
 
 
 /*
@@ -68,6 +76,13 @@ memset = 0x081E5ED8|1;
 
 template_instanciate_forward_search = 0x08006F8C|1;
 obj_delete = 0x080073DC|1;
+
+get_attribute = 0x0803FBE8|1;
+set_attribute = 0x0804037C|1;
+divmod_remainder = 0x081E4684|1;
+rand = 0x08044EC8|1;
+__aeabi_idiv = 0x081E4684|1;
+__aeabi_uidiv = 0x081E4684|1;
 
 /*
  * Custom Data

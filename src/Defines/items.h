@@ -1,5 +1,5 @@
-#ifndef ITEM_IDS
-#define ITEM_IDS
+#ifndef ITEM_IDS_H
+#define ITEM_IDS_H
 
 
 #define NONE 0x0
@@ -115,27 +115,10 @@
 #define OVAL_STONE 0x6E
 #define ODD_KEYSTONE 0x6F
 #define GRISEOUS_ORB 0x70
-#define UNKNOWN10 0x71
-#define UNKNOWN11 0x72
-#define UNKNOWN12 0x73
 #define DOUSE_DRIVE 0x74
 #define SHOCK_DRIVE 0x75
 #define BURN_DRIVE 0x76
 #define CHILL_DRIVE 0x77
-#define UNKNOWN3 0x78
-#define UNKNOWN4 0x79
-#define UNKNOWN4 0x7A
-#define UNKNOWN5 0x7B
-#define UNKNOWN6 0x7C
-#define UNKNOWN7 0x7D
-#define UNKNOWN8 0x7E
-#define UNKNOWN9 0x7F
-#define UNKNOWNA 0x80
-#define UNKNOWNB 0x81
-#define UNKNOWNC 0x82
-#define UNKNOWND 0x83
-#define UNKNOWNE 0x84
-#define UNKNOWNF 0x85
 #define SWEET_HEART 0x86
 #define ADAMANT_ORB 0x87
 #define LUSTROUS_ORB 0x88
@@ -225,7 +208,7 @@
 #define CHOICE_BAND 0xDC
 #define KINGS_ROCK 0xDD
 #define SILVER_POWDER 0xDE
-#define AMULET_COIN_VI 0xDF
+#define AMULET_COIN 0xDF
 #define CLEANSE_TAG 0xE0
 #define SOUL_DEW 0xE1
 #define DEEP_SEA_TOOTH 0xE2
@@ -279,7 +262,7 @@
 #define QUICK_POWDER 0x112
 #define FOCUS_SASH 0x113
 #define ZOOM_LENS 0x114
-#define METRONOME 0x115
+#define METRONOME_item 0x115
 #define IRON_BALL 0x116
 #define LAGGING_TAIL 0x117
 #define DESTINY_KNOT 0x118
@@ -422,15 +405,14 @@
 #define TM90 0x1A1
 #define TM91 0x1A2
 #define TM92 0x1A3
-#define HM_NORMAL_VI 0x1A4
-#define HM_FLYING_VI 0x1A5
-#define HM_WATER_VI 0x1A6
-#define HM_NORMAL_VI 0x1A7
-#define HM_WATER_VI 0x1A8
+/*
+#define HM_NORMAL 0x1A4
+#define HM_FLYING 0x1A5
+#define HM_WATER 0x1A6
+#define HM_NORMAL 0x1A7
+#define HM_WATER 0x1A8
 #define MASTER_BALL 0x1A9
-#define HM_FIGHTING_VI 0x1A9
-#define UNKNOWN1 0x1AA
-#define UNKNOWN2 0x1AB
+*/
 #define EXPLORER_KIT 0x1AC
 #define LOOT_SACK 0x1AD
 #define RULE_BOOK 0x1AE
@@ -448,9 +430,9 @@
 #define TOWN_MAP 0x1BA
 #define VS_SEEKER 0x1BB
 #define COIN_CASE 0x1BC
-#define OLD_ROD_VI 0x1BD
-#define GOOD_ROD_VI 0x1BE
-#define SUPER_ROD_VI 0x1BF
+#define OLD_ROD 0x1BD
+#define GOOD_ROD 0x1BE
+#define SUPER_ROD 0x1BF
 #define SPRAYDUCK 0x1C0
 #define POFFIN_CASE 0x1C1
 #define BICYCLE_GREEN 0x1C2
@@ -460,7 +442,7 @@
 #define LUNAR_WING 0x1C5
 #define MEMBER_CARD 0x1C6
 #define AZURE_FLUTE 0x1C7
-#define SS_TICKET 0x1C8
+// #define SS_TICKET 0x1C8
 #define CONTEST_PASS 0x1C9
 #define MAGMA_STONE 0x1CA
 #define PARCEL 0x1CB
@@ -511,36 +493,36 @@
 #define TIDAL_BELL 0x1F7
 #define RAGE_CANDY_BAR 0x1F8
 #define DATA_CARD 0x1F9
-#define DATA_CARD 0x1FA
-#define DATA_CARD 0x1FB
-#define DATA_CARD 0x1FC
-#define DATA_CARD 0x1FD
-#define DATA_CARD 0x1FE
-#define DATA_CARD 0x1FF
-#define DATA_CARD 0x200
-#define DATA_CARD 0x201
-#define DATA_CARD 0x202
-#define DATA_CARD 0x203
-#define DATA_CARD 0x204
-#define DATA_CARD 0x205
-#define DATA_CARD 0x206
-#define DATA_CARD 0x207
-#define DATA_CARD 0x208
-#define DATA_CARD 0x209
-#define DATA_CARD 0x20A
-#define DATA_CARD 0x20B
-#define DATA_CARD 0x20C
-#define DATA_CARD 0x20D
-#define DATA_CARD 0x20E
-#define DATA_CARD 0x20F
-#define DATA_CARD 0x210
-#define DATA_CARD 0x211
-#define DATA_CARD 0x212
-#define DATA_CARD 0x213
+#define DATA_CARD1 0x1FA
+#define DATA_CARD2 0x1FB
+#define DATA_CARD3 0x1FC
+#define DATA_CARD4 0x1FD
+#define DATA_CARD5 0x1FE
+#define DATA_CARD6 0x1FF
+#define DATA_CARD7 0x200
+#define DATA_CARD8 0x201
+#define DATA_CARD9 0x202
+#define DATA_CARDA 0x203
+#define DATA_CARDB 0x204
+#define DATA_CARDC 0x205
+#define DATA_CARDD 0x206
+#define DATA_CARDE 0x207
+#define DATA_CARDF 0x208
+#define DATA_CARD10 0x209
+#define DATA_CARD11 0x20A
+#define DATA_CARD12 0x20B
+#define DATA_CARD13 0x20C
+#define DATA_CARD14 0x20D
+#define DATA_CARD15 0x20E
+#define DATA_CARD16 0x20F
+#define DATA_CARD17 0x210
+#define DATA_CARD18 0x211
+#define DATA_CARD19 0x212
+#define DATA_CARD1A 0x213
 #define JADE_ORB 0x214
 #define LOCK_CAPSULE 0x215
-#define RED_ORB_VI 0x216
-#define BLUE_ORB_VI 0x217
+#define RED_ORB 0x216
+#define BLUE_ORB 0x217
 #define ENIGMA_STONE 0x218
 #define PRISM_SCALE 0x219
 #define EVIOLITE 0x21A
@@ -629,13 +611,10 @@
 #define TM95 0x26C
 #define B2W2_XTRANSCEIVER_M 0x26D
 #define GOD_STONE 0x26E
-#define GRAM 0x26F
-#define GRAM 0x270
-#define GRAM 0x271
 #define B2W2_XTRANSCEIVER_F 0x272
 #define MEDAL_BOX 0x273
 #define DNA_SPLICERS 0x274
-#define DNA_SPLICERS 0x275
+#define DNA_SPLICERS2 0x275
 #define PERMIT 0x276
 #define OVAL_CHARM 0x277
 #define SHINY_CHARM 0x278
@@ -657,7 +636,7 @@
 #define LUMINOUS_MOSS 0x288
 #define SNOWBALL 0x289
 #define SAFETY_GOGGLES 0x28A
-#define POKE_FLUTE_VI 0x28B
+#define POKE_FLUTE 0x28B
 #define RICH_MULCH 0x28C
 #define SURPRISE_MULCH 0x28D
 #define BOOST_MULCH 0x28E
@@ -723,9 +702,7 @@
 #define BICYCLE_YELLOW 0x2C9
 #define HOLO_CASTER_RED 0x2CA
 #define FAIRY_GEM 0x2CB
-#define UNKNOWN 0x2CC
 #define MEGA_CHARM 0x2CC
-#define UNKNOWN 0x2CD
 #define MACH_BIKE 0x2CE
 #define ACRO_BIKE 0x2CF
 #define WAILMER_PAIL 0x2D0
@@ -736,16 +713,16 @@
 #define LETTER 0x2D5
 #define EON_TICKET 0x2D6
 #define SCANNER 0x2D7
-#define GO_GOGGLES_VI 0x2D8
+#define GO_GOGGLES 0x2D8
 #define METEORITE 0x2D9
 #define RM_1_KEY 0x2DA
 #define RM_2_KEY 0x2DB
 #define RM_4_KEY 0x2DC
 #define RM_6_KEY 0x2DD
-#define STORAGE_KEY_VI 0x2DE
+// #define STORAGE_KEY 0x2DE
 #define DEVON_SCOPE 0x2DF
 #define SS_TICKET 0x2E0
-#define HM_WATER_VI 0x2E1
+// #define HM_WATER 0x2E1
 #define DEVON_SCUBA_GEAR 0x2E2
 #define CONTEST_COSTUME_M 0x2E3
 #define CONTEST_COSTUME_F 0x2E4
@@ -785,4 +762,4 @@
 #define METEORITE_SHARD 0x306
 #define EON_FLUTE 0x307
 
-#endif /* ITEM_IDS */
+#endif /* ITEM_IDS_H */

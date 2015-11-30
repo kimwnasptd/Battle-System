@@ -1,6 +1,5 @@
-#ifndef GET_ATTRIBUTE
-#define GET_ATTRIBUTE
-#include "types.h"
+#ifndef GET_ATTRIBUTE_H
+#define GET_ATTRIBUTE_H
 
 
 #define PID 0x0
@@ -56,6 +55,6 @@
 #define SPEED 0x3D
 #define SPECIAL_ATTACK 0x3E
 #define SPECIAL_DEFENCE 0x3F
-#define SPECIES 0x41
+#define SPECIES_2 0x41
 
-#endif /* GET_ATTRIBUTE */
+#endif /* GET_ATTRIBUTE_H */
