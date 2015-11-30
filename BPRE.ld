@@ -22,6 +22,7 @@ pokemon_bank = 0x0202402C;
 
 sheer_force_t = 0x0;
 mega_items_t = 0x0;
+megas = 0x0;
 
 
 /*

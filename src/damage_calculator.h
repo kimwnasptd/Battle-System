@@ -14,6 +14,7 @@
 #define mega_items_table_size 50
 #define iron_fist_table_size 50
 #define reckless_table_size 50
+#define mega_table_size 20
 
 
 struct move_table {
@@ -75,6 +76,10 @@ struct types {
 	u8 something;
 };
 
+struct mega_table {
+	u16 species;
+	u16 item;
+};
 
 /* 
 0 = immune
@@ -94,5 +99,6 @@ extern struct iron_fist_table iron_fist_t[iron_fist_table_size];
 extern struct reckless_table reckless_t[reckless_table_size];
 extern struct types type_chart[19];
 extern struct berries_table berries_t[berries_table_size];
+extern struct mega_table megas[mega_items_table_size];
 
 #endif /* BATTLE_DMG_CALCULATOR */

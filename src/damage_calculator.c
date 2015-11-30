@@ -566,6 +566,22 @@ u16 get_base_power(struct battle_field *battle_field, u8 attacker_id, u8 defende
 	}
 	
 	switch (attack->move_id) {
+		case KNOCK_OFF:
+			if (defender->item) {
+				u8 i;
+				for (i = 0; i < mega_items_table_size; i++) {
+					if ((attacker->item == megas[i].item) &&
+					(attacker->species == megas[i].species)) {
+						atk_base_power = attack->base_power;
+					}
+				}
+				if (atk_base_power) {
+					atk_base_power = apply_dmg_mod(attack->base_power, 50, 1);
+				}
+			} else {
+				atk_base_power = attack->base_power;
+			}
+			break;
 		case FRUSTRATION:
 		{
 			atk_base_power = get_attr(&pokemon_bank[attacker_id], HAPPINESS);
