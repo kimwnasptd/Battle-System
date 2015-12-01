@@ -1,15 +1,9 @@
 #include "battle_engine_resource.h"
 #include "ROM_tables.h"
 #include "multipurpose_resources.c"
-#include "./Defines/abilities.h"
-#include "./Defines/moves.h"
 #include "./Defines/get_attr.h"
 #include "types.h"
-#include "./Defines/weather.h"
-#include "./Defines/items.h"
 #include "./Defines/type_ids.h"
-#include "./Defines/ailments.h"
-#include "./Defines/pokemon.h"
 #include "./Defines/battle_types.h"
 
 u8 get_ability_from_bit(struct pokemon *pokemon) {
