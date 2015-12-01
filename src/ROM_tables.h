@@ -1,5 +1,5 @@
-#ifndef BATTLE_DMG_CALCULATOR
-#define BATTLE_DMG_CALCULATOR
+#ifndef ROM_TABLES_H
+#define ROM_TABLES_H
 
 #include "types.h"
 
@@ -15,6 +15,47 @@
 #define iron_fist_table_size 50
 #define reckless_table_size 50
 #define mega_table_size 20
+#define species_count 721
+
+struct dex_entry_data {
+	u8 name[12];
+	u16 height;
+	u16 weight;
+	u32 description_ptr_1;
+	u32 description_ptr_2;
+	u16 pkmn_scale;
+	u16 pkmn_offset;
+	u16 trainer_scale;
+	u16 trainer_offset;
+};
+
+struct base_stat_entry {
+	u8 hp;
+	u8 attack;
+	u8 defense;
+	u8 speed;
+	u8 sp_attack;
+	u8 sp_def;
+	u8 type1;
+	u8 type2;
+	u8 catch_rate;
+	u8 exp_yield;
+	u16 effort_yield;
+	u16 item_1;
+	u16 item_2;
+	u8 gender_chance;
+	u8 step_to_hatch;
+	u8 base_friendship;
+	u8 exp_point_table_nr;
+	u8 egg_group1;
+	u8 egg_group2;
+	u8 ability1;
+	u8 ability2;
+	u8 safari_flee_rate;
+	u8 color;
+	u16 padding;
+};
+
 
 
 struct move_table {
@@ -90,6 +131,9 @@ struct mega_table {
 
 u8 type_chart = [2, 2, 2, 2, 2, 1, 2, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 1, 1, 2, 3, 1, 0, 3, 2, 2, 2, 2, 2, 1, 3, 2, 3, 1, 2, 3, 2, 2, 2, 1, 3, 2, 1, 2, 2, 2, 3, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 2, 1, 0, 2, 2, 2, 3, 2, 2, 2, 2, 2, 3, 2, 2, 0, 3, 2, 3, 1, 2, 3, 2, 2, 2, 1, 3, 2, 2, 2, 2, 2, 2, 1, 3, 2, 1, 2, 3, 2, 1, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 1, 1, 1, 2, 2, 2, 1, 1, 2, 1, 2, 3, 2, 3, 2, 2, 3, 1, 0, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 3, 2, 2, 1, 2, 2, 2, 2, 2, 2, 3, 1, 2, 1, 2, 1, 1, 2, 1, 2, 3, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 3, 2, 3, 2, 1, 1, 3, 2, 2, 3, 1, 2, 2, 2, 2, 2, 2, 3, 3, 2, 2, 2, 2, 3, 1, 1, 2, 2, 2, 1, 2, 2, 2, 2, 1, 1, 3, 3, 1, 2, 1, 2, 1, 3, 1, 2, 2, 2, 1, 2, 2, 2, 2, 3, 2, 0, 2, 2, 2, 2, 2, 2, 3, 1, 1, 2, 2, 1, 2, 2, 2, 3, 2, 3, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 1, 2, 2, 0, 2, 2, 2, 3, 2, 3, 2, 2, 2, 1, 2, 1, 1, 3, 2, 2, 1, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 3, 2, 0, 2, 1, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 3, 2, 2, 1, 1, 2, 3, 2, 1, 2, 2, 2, 2, 1, 2, 1, 2, 2, 2, 2, 2, 3, 3, 2];
 */
+
+
+u16 species_to_dex_index(u16);
 extern struct move_table move[move_total];
 extern struct natural_gift_table natural_gift_t[natural_gift_table_size];
 extern struct fling_table fling_t[fling_table_size];
@@ -100,5 +144,6 @@ extern struct reckless_table reckless_t[reckless_table_size];
 extern struct types type_chart[19];
 extern struct berries_table berries_t[berries_table_size];
 extern struct mega_table megas[mega_items_table_size];
-
-#endif /* BATTLE_DMG_CALCULATOR */
+extern struct base_stat_entry base_stats[species_count];
+extern struct dex_entry_data dex_data[species_count];
+#endif /* ROM_TABLES_H */

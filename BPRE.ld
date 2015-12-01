@@ -15,6 +15,9 @@ oac_nullsub = 0x0810BB89;
 obj_ids_to_display = 0x02021800;
 evolution_table = 0x08259754;
 pokemon_bank = 0x0202402C;
+base_stats = 0x08254784;
+dex_data = 0x0844E850;
+
 
 /*
 * Place holder data
@@ -29,6 +32,8 @@ megas = 0x0;
  * Functions
  */
 
+c2_exit_to_overworld_1_continue_scripts_and_music = 0x080568C4|1;
+ 
 script_env_2_enable = 0x08069940|1;
 overworld_free_bgmaps = 0x080563F0|1;
 lcd_io_set = 0x08000A38|1;
@@ -84,6 +89,8 @@ divmod_remainder = 0x081E4684|1;
 rand = 0x08044EC8|1;
 __aeabi_idiv = 0x081E4684|1;
 __aeabi_uidiv = 0x081E4684|1;
+
+species_to_dex_index = 0x08043298|1;
 
 /*
  * Custom Data

@@ -1,0 +1,17 @@
+#ifndef BATTLE_TYPES_H
+#define BATTLE_TYPES_H
+
+
+#define SINGLE_WILD 0x0
+#define SINGLE_TRAINER 0x1
+#define DOUBLE_WILD 0x2
+#define DOUBLE_TRAINER 0x3
+#define DOUBLE_TWO_AI 0x4
+#define TRIPLE_WILD 0x5
+#define TRIPLE_TRAINER 0x6
+#define TRIPLE_FOUR_AI 0x7
+#define TRIPLE_FIVE_AI 0x8
+#define HORDE_WILD 0x9
+#define HORDE_TRAINER 0xA
+
+#endif /* GET_ATTRIBUTE_H */

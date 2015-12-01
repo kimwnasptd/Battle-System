@@ -4,9 +4,17 @@
 /* Battle setup structs */
 
 #include "types.h"
+#include "ROM_tables.h"
 
-#define species_count 800
-
+struct flags {
+	u8 effectiveness; // 1 Not effective, 2 super, 0 normal
+	u8 crit_flag : 1;
+	u8 health_was_full : 1;
+	u8 abilities_disabled : 1;
+	u8 items_disabled : 1;
+	u8 pursuit_flag : 1;
+	u8 filler : 3;
+};
 
 struct battle_config {
 	u8 type;
@@ -23,16 +31,7 @@ struct battle_config {
 	u8 player_control_ally_count;
 	u8 ai_control_ally_count;
 	u8 ally_backsprites[3];
-};
-
-struct flags {
-	u8 effectiveness; // 1 Not effective, 2 super, 0 normal
-	u8 crit_flag : 1;
-	u8 health_was_full : 1;
-	u8 abilities_disabled : 1;
-	u8 items_disabled : 1;
-	u8 pursuit_flag : 1;
-	u8 filler : 3;
+	struct flags *flags;
 };
 
 struct battler {
@@ -183,14 +182,16 @@ struct field_modifiers {
 };
 
 struct battle_field {
+	struct battle_config *b_config;
 	u8 battle_type;
 	u8 turn_counter;
 	struct field_modifiers modifiers;
-	struct battler battlers[6]; // potential for 6 on field at once
-	struct pokemon *battle_data[6];
+	struct battler battlers[6]; // potential for 6 on field
 	struct battle_flags *b_flags;
 	u16 moves_used[6]; // moves used this turn 
 	u8 ally[6];
+	u8 active_battler_count;
+	u8 active_battler_count_max;
 };
 
 struct pokemon {

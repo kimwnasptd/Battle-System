@@ -1,4 +1,4 @@
-#include "damage_calculator.h"
+#include "ROM_tables.h"
 #include "battle_engine_resource.h"
 
 u16 rand(void);
