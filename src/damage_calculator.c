@@ -36,7 +36,7 @@ u8 get_ability(struct battle_field *battle_field, struct battler *attacker, stru
 
 
 u8 ability_present(struct battle_field *battle_field, u8 ability, struct flags *flags) {
-	if (flags->items_disabled) {
+	if (flags->abilities_disabled) {
 		return false;
 	}
 	u16 i;
